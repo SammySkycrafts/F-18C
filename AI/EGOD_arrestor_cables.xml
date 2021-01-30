@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <scenario>
+      <entry>
+        <type>carrier</type>
+        <name>EGOD-bak17-1</name>
+	<wire>line</wire>
+	<latitude>52.81209155</latitude>
+	<longitude>-4.12941731</longitude>
+	<heading>170</heading>
+	<max-lat>0</max-lat>
+	<min-lat>0</min-lat>
+	<max-long>0</max-long>
+        <min-long>0</min-long>
+     </entry>
+     <entry>
+	      <type>carrier</type>
+	      <name>EGOD-bak35-1</name>
+              <wire>line</wire>
+	      <latitude>52.79854551</latitude>
+	      <longitude>-4.12534157</longitude>
+	      <heading>350</heading>
+	      <max-lat>0</max-lat>
+	      <min-lat>0</min-lat>
+	      <max-long>0</max-long>
+             <min-long>0</min-long>
+      </entry>
+    </scenario>
+  </PropertyList>

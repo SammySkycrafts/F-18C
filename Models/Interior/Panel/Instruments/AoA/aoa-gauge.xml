@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <name>AoA-gauge</name>
+ <path>aoa-gauge.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>needle</object-name>
+  <property>orientation/alpha-deg</property>
+  <interpolation>
+   <!--        AoA deg           gauge deg -->
+
+   <entry><ind>  -2.5</ind><dep>  270</dep></entry>
+   <entry><ind>  -2</ind><dep>  245</dep></entry>
+   <entry><ind>  0</ind><dep>   182,5</dep></entry>
+   <entry><ind> 1</ind><dep>   162,5</dep></entry>
+   <entry><ind> 5</ind><dep>   107,5</dep></entry>
+   <entry><ind> 11</ind><dep>   57,5</dep></entry>
+   <entry><ind> 13</ind><dep>   49</dep></entry>
+   <entry><ind> 16</ind><dep>   41,5</dep></entry>
+   <entry><ind> 30</ind><dep>   27,5</dep></entry> 
+
+  </interpolation>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+<!-- lighting -->
+
+  <animation> 
+   <object-name>mount</object-name>
+   <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+        <red>0.45</red>
+        <green>0.34</green>
+        <blue>0.18</blue>
+      </emission>
+  </animation>
+
+  <animation>
+   <object-name>face</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+        <red>0.50</red>
+        <green>0.25</green>
+        <blue>0.18</blue>
+      </emission>
+  </animation>
+
+  <animation>
+   <object-name>needle</object-name>
+   <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+        <red>0.75</red>
+        <green>0.55</green>
+        <blue>0.35</blue>
+      </emission>
+  </animation>
+
+	<animation>
+		<object-name>aoa-gauge</object-name>
+		<type>noshadow</type>
+	</animation>
+
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>35</max-m>
+ </animation>
+
+</PropertyList>

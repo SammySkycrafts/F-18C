@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+ <fx>
+ 
+ 
+ <engine>
+      <name>engine-start-inside</name>
+      <mode>once</mode>
+      <path>Aircraft/F-18C/Sounds/turbine_start_in.wav</path>
+      <condition>
+        <and>
+          <property>/controls/engines/engine[0]/starter</property>
+          <property>/sim/current-view/internal</property>
+        </and>
+      </condition>
+      <volume>
+        <property>engines/engine[0]/n2</property>
+        <factor> 0.01 </factor>
+        <min> 0.03 </min>
+        <max> 0.07 </max>
+      </volume>
+      <pitch>
+        <property>engines/engine[0]/n2</property>
+        <factor> 0.01 </factor>
+        <min> 0.0 </min>
+        <max> 0.9 </max>
+      </pitch>
+       <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+   </engine>
+   
+ 
+ 
+ <!-- External Sounds -->
+ 
+  <engine>
+      <name>engine-start-outside</name>
+      <mode>once</mode>
+      <path>Aircraft/F-18C/Sounds/startup.wav</path>
+      <condition>
+<and>
+
+<greater-than>  
+   <property>/engines/engine[0]/rpm</property>
+   <value>0.5</value>
+   
+  </greater-than>
+   <less-than>
+                <property>velocities/groundspeed-kt</property>
+                <value>5</value>
+            </less-than>
+  <not>
+   <property>/sim/current-view/internal</property>
+  </not>
+</and>
+</condition>
+
+      <volume>
+        <property>engines/engine[0]/n2</property>
+        <factor> 0.09 </factor>
+        <min> 0.3 </min>
+        <max> 0.9 </max>
+      </volume>
+      <pitch>
+        <property>engines/engine[0]/n2</property>
+        <factor> 0.01 </factor>
+	<min> 0.0 </min>
+	<max> 0.9 </max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+	
+	
+	
+	<engine>
+      <name>engine-start-outside1</name>
+      <mode>once</mode>
+      <path>Aircraft/F-18C/Sounds/startup.wav</path>
+      <condition>
+<and>
+
+<greater-than>  
+   <property>/engines/engine[1]/rpm</property>
+   <value>0.5</value>
+   
+  </greater-than>
+   <less-than>
+                <property>velocities/groundspeed-kt</property>
+                <value>5</value>
+            </less-than>
+  <not>
+   <property>/sim/current-view/internal</property>
+  </not>
+</and>
+</condition>
+      <volume>
+        <property>engines/engine[1]/n2</property>
+        <factor> 0.09 </factor>
+        <min> 0.3 </min>
+        <max> 0.9 </max>
+      </volume>
+      <pitch>
+        <property>engines/engine[1]/n2</property>
+        <factor> 0.01 </factor>
+	<min> 0.0 </min>
+	<max> 0.9 </max>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+ 
+ <!-- Engines-->
+ 
+  <engine>
+   <name>Intake Fans</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/engine-intake.wav</path>
+   <condition>
+     <not>
+          <property>/sim/current-view/internal</property>
+	  <property>/engines/engine/out-of-fuel</property>
+     </not>
+   </condition>
+   <position>
+    	<x>5.5</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>-90.0</x>
+    	<y>0</y>
+    	<z>0</z>
+    	<inner-angle>110.0</inner-angle>
+    	<outer-angle>180.0</outer-angle>
+    	<outer-gain>0.4</outer-gain>
+   </orientation>
+   <volume>
+    	<property>engines/engine[0]/n2</property>
+    	<factor>0.08</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+    	<property>engines/engine/n2</property>
+	<factor>0.05</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </pitch>
+  </engine>
+  
+  <engine>
+   <name>APU Exhaust</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/wing-vents.wav</path>
+   <condition>
+    <property>/engines/engine/running</property>
+     	<not>
+          <property>/sim/current-view/internal</property>
+	  <property>/engines/engine/out-of-fuel</property>
+     	</not>
+   </condition>
+   <position>
+    	<x>2.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>80.0</inner-angle>
+    	<outer-angle>110.0</outer-angle>
+    	<outer-gain>0.6</outer-gain>
+   </orientation>
+   <volume>
+    	<property>engines/engine[2]/n2</property>
+    	<factor>0.03</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+    	<property>engines/engine[2]/n2</property>
+	<factor>0.2</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </pitch>
+  </engine>
+  
+  <engine>
+   <name>Engine Exhaust</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/engine-exhaust.wav</path>
+   <condition>
+    	<property>/engines/engine/running</property>
+    	 <not>
+         	<property>/sim/current-view/internal</property>
+	 	<property>/engines/engine/out-of-fuel</property>
+     	</not>
+   </condition>
+   <position>
+    	<x>6.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>80.0</inner-angle>
+   	<outer-angle>110.0</outer-angle>
+   	<outer-gain>0.5</outer-gain>
+   </orientation>
+   <volume>
+        <property>engines/engine/n2</property>
+        <factor>0.08</factor>
+        <min>0.4</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+    	<property>engines/engine/n2</property>
+	<factor>0.005</factor>
+	<min>0</min>
+	<max>0.7</max>
+   </pitch>
+  </engine>
+  
+  <engine>
+   <name>Engine Thrust LowFreq</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/engine-lowfreq.wav</path>
+   <condition>
+    	<property>/engines/engine/running</property>
+     	<not>
+        	<property>/sim/current-view/internal</property>
+		<property>/engines/engine/out-of-fuel</property>
+     	</not>
+   </condition>
+   <position>
+    	<x>10.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>0.0</inner-angle>
+    	<outer-angle>160.0</outer-angle>
+    	<outer-gain>0.5</outer-gain>
+   </orientation>
+   <volume>
+    	<property>engines/engine/thrust-lbs</property>
+    	<factor>0.0001</factor>
+    	<offset>0.25</offset>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+  </engine>
+  
+  <!-- Afterburner -->
+  
+  <engine>
+   <name>Reheat</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/reheat.wav</path>
+   <condition>
+	 <property>engines/engine/afterburner</property>
+    	   <not>
+		<property>/sim/current-view/internal</property>
+		<property>/engines/engine/out-of-fuel</property>
+     	   </not>
+   </condition>
+   <position>
+    	<x>6.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <orientation>
+	<x>90.0</x>
+    	<y>0.0</y>
+    	<z>0.0</z>
+    	<inner-angle>60.0</inner-angle>
+    	<outer-angle>160.0</outer-angle>
+    	<outer-gain>0.75</outer-gain>
+   </orientation>
+   <volume>
+        <offset>1</offset>
+	<min>0.3</min>
+	<max>1.0</max>
+   </volume>
+  </engine>
+  
+  <!-->
+  <ignition>
+   <name>Reheat Ignition</name>
+   <mode>once</mode>
+   <path>Aircraft/F-18C/Sounds/reheat-ignite.wav</path>
+   <condition>
+     <not>
+	  <property>/engines/engine/out-of-fuel</property>
+	 </not>
+   </condition>
+   <property>/engines/engine/afterburner</property>
+   <position>
+    <x>6.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <volume>
+    <offset>0.25</offset>
+   </volume>
+  </ignition>
+  <-->
+  
+  <!-- Cockpit Environment -->
+  
+  <cockpit>
+   <name>Cockpit Atmos</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/cockpit.wav</path>
+   <condition>
+    	<property>/sim/current-view/internal</property>
+   </condition>
+   <volume>
+   	<offset>1</offset>
+	<min>0.2</min>
+	<max>1.0</max>
+   </volume>
+  </cockpit>
+  
+  <thrust>
+   <name>Internal Engine Thrust LowFreq</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/engine-lowfreq.wav</path>
+   <condition>
+    	<property>/sim/current-view/internal</property>
+	 <not>
+	  <property>/engines/engine/out-of-fuel</property>
+	 </not>
+   </condition>
+   <volume>
+    	<property>engines/engine/thrust-lbs</property>
+    	<factor>0.00005</factor>
+    	<offset>0.4</offset>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+  </thrust>
+  
+  <engine>
+   <name>Intake Fans Internal</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/engine-intake.wav</path>
+   <condition>
+         <property>/sim/current-view/internal</property>
+   </condition>
+   <volume>
+   	<property>/controls/canopy/position-norm</property>
+   	<factor>1.0</factor>
+	<min>0.0</min>
+	<max>1.0</max>
+   </volume>
+   <pitch>
+        <property>engines/engine/n2</property>
+	<factor>0.005</factor>
+	<min>0</min>
+	<max>0.7</max>
+   </pitch>
+  </engine>
+  
+  <engine>
+   <name>Exhaust Internal</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/engine-exhaust.wav</path>
+   <condition>
+	     <property>/sim/current-view/internal</property>
+   </condition>
+   <volume>
+        <property>/controls/canopy/position-norm</property>
+        <factor>1.0</factor>
+        <min>0.0</min>
+	<max>1.0</max>
+	</volume>
+   <pitch>
+        <property>engines/engine/n2</property>
+	<factor>0.005</factor>
+	<min>0</min>
+	<max>0.7</max>
+   </pitch>
+  </engine>
+  
+  <!-- engine>
+   <name>Reheat internal</name>
+   <mode>looped</mode>
+   <path>Aircraft/F-18C/Sounds/Samples/reheat.wav</path>
+   <condition>
+     <and>
+	  <property>/sim/current-view/internal</property>
+     </and>
+     <and>
+	  <property>engines/engine/afterburner</property>
+     </and>
+   </condition>
+   <position>
+        <x>8.0</x>
+	<y>0.0</y>
+	<z>0.0</z>
+   </position>
+   <volume>
+         <property>/controls/canopy/position-norm</property>
+         <factor>1</factor>
+         <min>0.3</min>
+	<max>1.0</max>
+   </volume>
+   </engine -->
+
+<!-- old sounds setup from A-4 & AlMurSi tunning -->
+
+		<rumble>
+			<name>rumble</name>
+			<mode>looped</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/rumble.wav</path>
+			<condition>
+				<or>
+					<property>/gear/gear[0]/wow</property>
+					<property>/gear/gear[1]/wow</property>
+					<property>/gear/gear[2]/wow</property>
+				</or>
+			</condition>
+			<volume>
+				<property>/velocities/airspeed-kt</property>
+				<type>lin</type>
+				<factor>.012</factor>
+				<min>0</min>
+				<max>1</max>
+			</volume>
+		</rumble>
+		<gear>
+			<name>gear</name>
+			<mode>in-transit</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/gear.wav</path>
+			<property>/gear/gear[0]/position-norm</property>
+			<pitch>
+				<internal>dt_play</internal>
+				<offset>1.0</offset>
+				<factor>-0.001</factor>
+			</pitch>
+		</gear>
+		<gear>
+			<name>gear-lock</name>
+			<path>Aircraft/F-18C/Sounds/Samples/gear-lck.wav</path>
+			<condition>
+				<equals>
+					<property>/gear/gear[0]/position-norm</property>
+					<value>0</value>
+				</equals>
+			</condition>
+		</gear>
+		<gear>
+			<name>gear</name>
+			<mode>in-transit</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/gear.wav</path>
+			<property>/gear/gear[1]/position-norm</property>
+			<pitch>
+				<internal>dt_play</internal>
+				<offset>1.0</offset>
+				<factor>-0.001</factor>
+			</pitch>
+		</gear>
+		<gear>
+			<name>gear-lock</name>
+			<path>Aircraft/F-18C/Sounds/Samples/gear-lck.wav</path>
+			<condition>
+				<equals>
+					<property>/gear/gear[1]/position-norm</property>
+					<value>0</value>
+				</equals>
+			</condition>
+		</gear>
+		<gear>
+			<name>gear</name>
+			<mode>in-transit</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/gear.wav</path>
+			<property>/gear/gear[2]/position-norm</property>
+			<pitch>
+				<internal>dt_play</internal>
+				<offset>1.0</offset>
+				<factor>-0.001</factor>
+			</pitch>
+		</gear>
+		<gear>
+			<name>gear-lock</name>
+			<path>Aircraft/F-18C/Sounds/Samples/gear-lck.wav</path>
+			<condition>
+				<equals>
+					<property>/gear/gear[2]/position-norm</property>
+					<value>0</value>
+				</equals>
+			</condition>
+		</gear>
+		<squeal>
+			<name>squeal</name>
+			<path>Aircraft/F-18C/Sounds/Samples/squeal.wav</path>
+			<condition>
+				<or>
+					<property>/gear/gear[0]/wow</property>
+					<property>/gear/gear[1]/wow</property>
+					<property>/gear/gear[2]/wow</property>
+				</or>
+			</condition>
+			<volume>
+				<property>/velocities/speed-down-fps</property>
+				<factor>0.05</factor>
+				<max>1.0</max>
+			</volume>
+			<volume>
+				<property>/velocities/airspeed-kt</property>
+				<factor>0.01</factor>
+			</volume>
+			<volume>
+				<internal>dt_stop</internal>
+				<factor>0.05</factor>
+				<max>1.0</max>
+			</volume>
+			<pitch>
+				<property>/velocities/airspeed-kt</property>
+				<factor>0.0025</factor>
+				<offset>1.2</offset>
+			</pitch>
+		</squeal>
+		<flap>
+			<name>flaps</name>
+			<mode>in-transit</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/flaps.wav</path>
+				<property>/surface-positions/flap-pos-norm</property>
+				<property>/surface-positions/speedbrake-pos-norm</property>
+				<property>/surface-positions/slat-pos-norm</property>
+			<volume>
+				<offset>0.25</offset>
+				<max>0.9</max>
+			</volume>
+		</flap>
+		<flap>
+			<name>flaps</name>
+			<mode>in-transit</mode>
+			<path>Sounds/flaps.wav</path>
+				<property>/surface-positions/flap-pos-norm</property>
+				<property>/surface-positions/speedbrake-pos-norm</property>
+				<property>/surface-positions/slat-pos-norm</property>
+			<volume>
+				<offset>0.25</offset>
+				<max>0.9</max>
+			</volume>
+		</flap>
+		<speedbrake>
+			<name>speedbrake</name>
+			<mode>in-transit</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/flaps.wav</path>
+			<property>/surface-positions/speedbrake-pos-norm</property>
+			<volume>
+				<offset>0.25</offset>
+				<max>0.9</max>
+			</volume>
+		</speedbrake>
+		<speedbrake>
+			<name>speedbrake</name>
+			<mode>in-transit</mode>
+			<path>Sounds/flaps.wav</path>
+			<property>/surface-positions/speedbrake-pos-norm</property>
+			<volume>
+				<offset>0.25</offset>
+				<max>0.9</max>
+			</volume>
+		</speedbrake>
+		<slat>
+			<name>slats</name>
+			<mode>in-transit</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/flaps.wav</path>
+			<property>/surface-positions/slats-pos-norm</property>
+			<volume>
+				<offset>0.25</offset>
+				<max>0.9</max>
+			</volume>
+		</slat>
+		<slat>
+			<name>slats</name>
+			<mode>in-transit</mode>
+			<path>Sounds/flaps.wav</path>
+			<property>/surface-positions/slats-pos-norm</property>
+			<volume>
+				<offset>0.25</offset>
+				<max>0.9</max>
+			</volume>
+		</slat>
+		<!-- Wind >
+		<wind>
+			<name>wind</name>
+			<mode>looped</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/wind.wav</path>
+			<property>/velocities/airspeed-kt</property>
+			<volume>
+				<property>/position/altitude-ft</property>
+				<factor>-0.000015</factor>
+				<offset>1.0</offset>
+				<min>0.1</min>
+				<max>1.0</max>
+			</volume>
+			<volume>
+				<property>/velocities/airspeed-kt</property>
+				<factor>0.0015</factor>
+				<min>0.03</min>
+				<max>0.20</max>
+			</volume>
+			<pitch>
+				<property>/velocities/airspeed-kt</property>
+				<factor>0.01</factor>
+				<offset>1.25</offset>
+			</pitch>
+		</wind>
+		<-->
+<!-- no binding yet? 
+  <stall>
+   <name>stall</name>
+   <path>Aircraft/F-18C/Sounds/Samples/stall.wav</path>
+   <property>/sim/alarms/stall-warning</property>
+   <volume>
+    <property>/velocities/airspeed-kt</property>
+    <min>30.0</min>
+   </volume>
+  </stall>
+-->
+
+<!-- Stall testing from A340 -->
+    <stall>
+        <name>stall</name>
+        <mode>looped</mode>
+        <path>Aircraft/F-18C/Sounds/Samples/stall.wav</path>
+        <condition>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>90</value>
+            </less-than>
+            <not>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+                <property>/gear/gear[0]/position-norm</property>
+            </not>
+        </condition>
+        <volume>
+            <max>0.5</max>
+        </volume>
+        <position>
+            <x>-22</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </stall>
+
+<!-- switches -->
+		<click>
+			<name>hook click down</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				   <property>/controls/gear/tailhook</property>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>hook click up</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<not>
+				      <property>/controls/gear/tailhook</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>tailwheel-lock click down</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<property>/controls/gear/tailwheel-lock</property>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>tailwheel-lock click up</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<not>
+				   <property>controls/gear/tailwheel-lock</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>canopy click up</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<less-than>
+				   <property>/controls/canopy/position-norm</property>
+				   <value>1</value>
+				</less-than>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>canopy click down</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<greater-than>
+				   <property>/controls/canopy/position-norm</property>
+				   <value>0.01</value>
+				</greater-than>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>Gear Stick down</name>
+			<path>Aircraft/F-18C/Sounds/Samples/shlock.wav</path>
+			<condition>
+				<property>/controls/gear/gear-down</property>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>Gear Stick up</name>
+			<path>Aircraft/F-18C/Sounds/Samples/shlock.wav</path>
+			<condition>
+				<not>
+				   <property>/controls/gear/gear-down</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>Parking brakes down</name>
+			<path>Aircraft/F-18C/Sounds/Samples/slide.wav</path>
+			<condition>
+				<property>controls/gear/brake-parking</property>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>Parking brakes up</name>
+			<path>Aircraft/F-18C/Sounds/Samples/slide.wav</path>
+			<condition>
+				<not>
+				   <property>controls/gear/brake-parking</property>
+				</not>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>Reverser down</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<property>/controls/engines/engine[0]/reverser</property>
+				<!--property>/controls/engines/engine[1]/reverser</property-->
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+		<click>
+			<name>Reverser brakes up</name>
+			<path>Aircraft/F-18C/Sounds/Samples/click.wav</path>
+			<condition>
+				<not>
+				   <property>/controls/engines/engine[0]/reverser</property>
+				   <!--property>/controls/engines/engine[1]/reverser</property-->
+				</not>
+			</condition>
+			<volume>
+				<factor>1.0</factor>
+				<max>1.0</max>
+			</volume>
+		</click>
+
+
+		<!--guns>
+			<name>gunfire</name>
+			<mode>looped</mode>
+			<path>Aircraft/F-18C/Sounds/Samples/gunfire_1.wav</path>
+			<condition>
+				<property>controls/armament/trigger</property>
+				<property>ai/submodels/submodel[1]/count[0]</property>
+			</condition>
+			<volume>
+				<max>1.0</max>
+			</volume>
+			<pitch>
+				<factor>1</factor>
+				<offset>0.2</offset>
+			</pitch>
+		</guns-->
+   
+<!-- Extras... -->
+
+		<canopy> <!-- Sound from A-6E-->
+			<name>closed canopy</name>
+			<path>Aircraft/F-18C/Sounds/Samples/canopy-close2.wav</path>
+			<condition>
+				<less-than>
+				   <property>controls/canopy/position-norm</property>
+				   <value>0.03</value>
+				</less-than>
+			</condition>
+			<volume>
+				<factor>1</factor>
+				<max>1.0</max>
+			</volume>
+		</canopy>
+
+
+<!-- Crashed -->
+
+<crash>
+  <name>intense ground contact</name>
+  <mode>once</mode>
+  <path>Sounds/crash.wav</path>
+  <property>sim/crashed</property>
+  <volume>
+    <factor>1</factor>
+  </volume>
+  <pitch>
+    <factor>1.5</factor>
+  </pitch>
+</crash>
+
+<guns>
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/F-18C/Sounds/gunfire.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </guns>
+
+  
+ </fx>
+</PropertyList>
+

@@ -1,0 +1,134 @@
+
+<PropertyList>
+
+ <path>landing-light.ac</path>
+ 
+  <effect>
+   <inherits-from>Effects/model-transparent</inherits-from>
+   <condition>
+    <property>/sim/rendering/rembrandt/enabled</property>
+   </condition>
+  <object-name>aura</object-name>
+  </effect>
+   
+   <animation>
+    <type>select</type>
+    <object-name>beam</object-name>
+    <condition>
+     <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+   </animation>
+    
+  <animation>
+    <type>light</type>
+    <light-type>spot</light-type>
+    <object-name>beam</object-name>
+	<nopreview/>
+    <position>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </position>
+    <direction>
+      <x> -100 </x>
+      <y>  0.000 </y>
+      <z>  0 </z>
+    </direction>
+    <ambient>
+      <r>  0.3 </r>
+      <g>  0.3 </g>
+      <b>  0.1 </b>
+      <a>  1.0 </a>
+    </ambient>
+    <diffuse>
+      <r>  0.9 </r>
+      <g>  0.9 </g>
+      <b>  0.7 </b>
+      <a>  1.0 </a>
+    </diffuse>
+    <specular>
+      <r>  1.0 </r>
+      <g>  1.0 </g>
+      <b>  0.95 </b>
+      <a>  1.0 </a>
+    </specular>
+     <dim-factor>
+      <property>/sim/model/lights/daylight-adjuster</property>
+      <factor>-1.2</factor>
+	  <offset>1.2</offset>
+      <min>0</min>
+      <max>1.0</max>
+   </dim-factor>
+   <attenuation>
+     <c>1.0</c>
+     <l>0.002</l>
+     <q>0.00005</q>
+   </attenuation>
+   <exponent>70.0</exponent>
+   <cutoff>400</cutoff>
+   <near-m>3.5</near-m>
+   <far-m>500</far-m>
+ </animation>
+ 
+ <animation>
+  <type>flash</type>
+  <object-name>aura</object-name>
+  <offset>0.1</offset>
+  <center>
+   <x-m>-0.005</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+  <power>45</power>
+ </animation>
+ 
+ <animation>
+  <type>dist-scale</type>
+  <object-name>aura</object-name>
+  <interpolation>
+   <entry>
+    <ind>0</ind>
+    <dep>1</dep>
+   </entry>
+   <entry>
+    <ind>500</ind>
+    <dep>3</dep>
+   </entry>
+   <entry>
+    <ind>4000</ind>
+    <dep>5</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.0138</x-m>
+   <y-m>0</y-m>
+   <z-m>0.03455</z-m>
+  </center>
+ </animation>
+ 
+ <animation>
+  <type>blend</type>
+  <object-name>aura</object-name>
+  <property>/sim/model/lights/daylight-adjuster</property>
+  <factor>1.15</factor>
+  <min>0.0</min>
+  <max>1.0</max>
+ </animation>
+ 
+ <animation>
+  <type>material</type>
+  <object-name>landlight.lens</object-name>
+  <object-name>aura</object-name>
+  <emission>
+    <red>1</red>
+    <green>1</green>
+    <blue>0.75</blue>
+  </emission>
+ </animation>
+
+</PropertyList>

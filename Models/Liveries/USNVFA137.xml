@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">US Navy VFA-137 Kestrels</name>
+     <fuselage>Liveries/USNVFA137/fuselage.jpg</fuselage>
+	 <wings>Liveries/USNVFA137/wing-stab.jpg</wings>
+	 <vstab>Liveries/USNVFA137/rudder.jpg</vstab>
+     <texture-pilot>Liveries/USNVFA137/137pilot.jpg</texture-pilot>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

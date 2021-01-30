@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">USMC VMFA-531 Grey Ghosts</name>
+     <fuselage>Liveries/USMCVMFA531/fuselage.jpg</fuselage>
+	 <wings>Liveries/USMCVMFA531/wing-stab.jpg</wings>
+	 <vstab>Liveries/USMCVMFA531/rudder.jpg</vstab>
+     <texture-pilot>Liveries/USMCVMFA531/531pilot.jpg</texture-pilot>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <model>
+  <name>twinmount</name>
+    <path>Aircraft/F-18C/Models/weapons/twin-mount.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+
+    </offsets>
+  </model>
+  
+  
+ <model>
+  <name>left-aim-120</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <offsets>
+      <x-m>0.0</x-m>
+      <y-m>-0.42</y-m>
+      <z-m>-0.4</z-m>
+
+    </offsets>
+  </model>
+
+   <model>
+  <name>right-aim-120</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <offsets>
+     <x-m>0.0</x-m>
+      <y-m>0.42</y-m>
+      <z-m>-0.4</z-m>
+
+    </offsets>
+  </model>
+
+
+
+</PropertyList>

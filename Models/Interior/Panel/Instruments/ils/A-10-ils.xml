@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+<path>A-10-ils.ac</path>
+
+
+<animation>
+  <type>textranslate</type>
+  <object-name>drum-5</object-name>
+  <property>sim/model/A-10/instrumentation/nav[0]/frequencies/freq-whole</property>
+  <factor>0.1</factor>
+  <offset>-1</offset>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>drum-4</object-name>
+  <property>sim/model/A-10/instrumentation/nav[0]/frequencies/freq-whole</property>
+  <factor>0.01</factor>
+  <offset>-10</offset>
+  <step>10</step>
+  <scroll>0.5</scroll>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>drum-3</object-name>
+  <property>sim/model/A-10/instrumentation/nav[0]/frequencies/freq-whole</property>
+  <factor>0.001</factor>
+  <offset>-100</offset>
+  <step>100</step>
+  <scroll>0.5</scroll>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>drum-2</object-name>
+  <property>sim/model/A-10/instrumentation/nav[0]/frequencies/freq-whole</property>
+  <factor>0.0001</factor>
+  <offset>-1000</offset>
+  <step>1000</step>
+  <scroll>0.5</scroll>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <animation>
+  <type>textranslate</type>
+  <object-name>drum-1</object-name>
+  <property>sim/model/A-10/instrumentation/nav[0]/frequencies/freq-whole</property>
+  <factor>0.00001</factor>
+  <offset>-10000</offset>
+  <step>10000</step>
+  <scroll>0.5</scroll>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+
+
+
+<!-- lighting -->
+  <animation>
+   <object-name>mount</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+        <red>0.44</red>
+        <green>0.27</green>
+        <blue>0.15</blue>
+      </emission>
+  </animation>
+
+  <animation>
+   <object-name>deci-knob</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+        <red>0.22</red>
+        <green>0.14</green>
+        <blue>0.08</blue>
+      </emission>
+  </animation>
+
+  <animation>
+   <object-name>units-knob</object-name>
+   <type>material</type>
+     <emission> 
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+        <red>0.22</red>
+        <green>0.14</green>
+        <blue>0.08</blue>
+      </emission>
+  </animation>
+  
+
+
+  <animation>
+    <object-name>drum-1</object-name>
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>0.60</red>
+      <green>0.35</green>
+      <blue>0.23</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>drum-2</object-name>
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>0.60</red>
+      <green>0.35</green>
+      <blue>0.23</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>drum-3</object-name>
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>0.60</red>
+      <green>0.35</green>
+      <blue>0.23</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>drum-4</object-name>
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>0.60</red>
+      <green>0.35</green>
+      <blue>0.23</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>drum-5</object-name>
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>0.60</red>
+      <green>0.35</green>
+      <blue>0.23</blue>
+    </emission>
+  </animation>
+  <animation>
+    <object-name>deci-point</object-name>
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>0.60</red>
+      <green>0.35</green>
+      <blue>0.23</blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>5</max-m>
+  </animation>
+
+</PropertyList>

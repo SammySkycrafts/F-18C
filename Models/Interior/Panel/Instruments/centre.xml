@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+
+ <!--  lower centre console -->
+   <animation>
+  <type>material</type>
+  <object-name>afterburner</object-name>
+   <object-name>brake</object-name>
+   <object-name>hook</object-name>
+   <object-name>launch</object-name>
+  <ambient>
+    <red>0.0</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.0</green>
+    <blue>0.0</blue>
+  </emission> 
+ </animation>
+ 
+  <text>
+  <name>afterburner</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.0056</character-size>
+  <offsets>
+   <x-m>-4.515</x-m>
+   <y-m>-0.023</y-m>
+   <z-m>0.6823</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">AFTRBRN</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+  <animation>
+        <type>select</type>
+        <object-name>afterburner</object-name>
+        
+        <condition>
+       <property>engines/engine[0]/afterburner</property>
+        </condition>
+    </animation>
+ 
+ 
+ 
+ <text>
+  <name>brake</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.0056</character-size>
+  <offsets>
+   <x-m>-4.515</x-m>
+   <y-m>0.024</y-m>
+   <z-m>0.6823</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">BRAKE</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <animation>
+        <type>select</type>
+        <object-name>brake</object-name>
+        
+        <condition>
+       <property>surface-positions/speedbrake-pos-norm</property>
+        </condition>
+    </animation>
+
+	
+<text>
+  <name>hook</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.0056</character-size>
+  <offsets>
+   <x-m>-4.511</x-m>
+   <y-m>-0.018</y-m>
+   <z-m>0.669</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">HOOK</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ 
+  <animation>
+        <type>select</type>
+        <object-name>hook</object-name>
+        
+        <condition>
+       <property>controls/gear/tailhook</property>
+        </condition>
+    </animation>
+	
+	
+	
+	<text>
+  <name>launch</name>
+  <font>condensed.txf</font>
+  <character-size type="double">0.0056</character-size>
+  <offsets>
+   <x-m>-4.511</x-m>
+   <y-m>0.019</y-m>
+   <z-m>0.669</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LNCH BAR</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <animation>
+        <type>select</type>
+        <object-name>launch</object-name>
+        
+        <condition>
+       <property>controls/gear/launchbar</property>
+        </condition>
+    </animation>
+	
+</PropertyList>

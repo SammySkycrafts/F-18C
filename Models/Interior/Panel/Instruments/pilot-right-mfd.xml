@@ -1,0 +1,417 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+ 
+   <animation>
+  <type>material</type>
+  <object-name>Traget-headder</object-name>
+    <object-name>Traget-ID</object-name>
+	<object-name>ID</object-name>
+	<object-name>Traget-Range</object-name>
+	<object-name>range</object-name>
+	<object-name>Traget-Bearing</object-name>
+	<object-name>brng</object-name>
+	<object-name>Traget-Alt</object-name>
+	<object-name>alt</object-name>
+	<object-name>Traget-Speed</object-name>
+	<object-name>spd</object-name>
+	<object-name>WEAPON-MODE</object-name>
+	<object-name>GUN</object-name>
+	<object-name>AMMO</object-name>
+	<object-name>AA</object-name>
+	<object-name>AG</object-name>
+	<object-name>misile</object-name>
+  <ambient>
+    <red>0.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.0</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.3</red>
+    <green>0.8</green>
+    <blue>0.3</blue>
+  </emission> 
+ </animation>
+ 
+ <text>
+  <name>Traget-headder</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.008</character-size>
+  <offsets>
+   <x-m>-4.616</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.5525</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">TARGET DATA:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+  <text>
+  <name>Traget-ID</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+   <x-m>-4.61</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.5405</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">TARGET ID:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>ID</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+   <x-m>-4.61</x-m>
+   <y-m>0.18</y-m>
+   <z-m>0.5405</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">text-value</type>
+  <format>%s</format>
+  <truncate type="bool">true</truncate>
+  <property>/ai/closest/callsign</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>Traget-Range</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+   <x-m>-4.61</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.5305</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">TARGET RANGE:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>range</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+ <x-m>-4.61</x-m>
+   <y-m>0.19</y-m>
+   <z-m>0.5305</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+   <format type="string">%3.2f nm</format>
+  <truncate type="bool">true</truncate>
+  <property>ai/closest/range</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>Traget-Bearing</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+   <x-m>-4.6073</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.521</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">TARGET BRNG:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>brng</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+ <x-m>-4.6073</x-m>
+   <y-m>0.18</y-m>
+   <z-m>0.521</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+   <format type="string">%3.2f</format>
+  <truncate type="bool">true</truncate>
+  <property>/ai/closest/bearing</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>Traget-Alt</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+   <x-m>-4.603</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.511</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">TARGET ALT:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ <text>
+  <name>alt</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+ <x-m>-4.603</x-m>
+   <y-m>0.19</y-m>
+   <z-m>0.511</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+   <format type="string">%5.0f ft</format>
+  <truncate type="bool">true</truncate>
+  <property>ai/closest/altitude</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>Traget-Speed</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+   <x-m>-4.60</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.501</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">TARGET SPD:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>spd</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.005</character-size>
+  <offsets>
+ <x-m>-4.60</x-m>
+   <y-m>0.19</y-m>
+   <z-m>0.501</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+   <format type="string">%4.0f kts</format>
+  <truncate type="bool">true</truncate>
+  <property>ai/closest/speed</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>WEAPON-MODE</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+  <x-m>-4.59</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.49</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">COMBAT MODE:</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+ <text>
+  <name>GUN</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+  <x-m>-4.59</x-m>
+   <y-m>0.17</y-m>
+   <z-m>0.49</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">GUN</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+ <text>
+  <name>AMMO</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+  <x-m>-4.59</x-m>
+   <y-m>0.21</y-m>
+   <z-m>0.48</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+   <format type="string">%4.0f Rnds</format>
+  <truncate type="bool">true</truncate>
+  <property>ai/submodels/submodel/count</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+
+  
+  <text>
+  <name>AA</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+    <x-m>-4.59</x-m>
+   <y-m>0.17</y-m>
+   <z-m>0.49</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">AIR-AIR</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ <text>
+  <name>AG</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+    <x-m>-4.59</x-m>
+   <y-m>0.17</y-m>
+   <z-m>0.49</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">AIR-GROUND</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <text>
+  <name>misile</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+  <x-m>-4.59</x-m>
+   <y-m>0.21</y-m>
+   <z-m>0.48</z-m>
+   <pitch-deg>-15</pitch-deg>
+  </offsets>
+   <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">testvalue</type>
+   
+ 
+   <property>controls/armament/missile/name</property>
+  
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+   
+<!-- animation to display gun/ weapon mode when selected -->
+
+ <animation>
+        <type>select</type>
+        <object-name>AMMO</object-name>
+        <object-name>GUN</object-name>
+        <condition>
+        <equals> 
+        <property>controls/armament/stick-selector</property>
+        <value>1</value>
+      </equals> 
+        </condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>AA</object-name>
+        <condition>
+         <equals> 
+        <property>controls/armament/stick-selector</property>
+        <value>2</value>
+      </equals> 
+        </condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>AG</object-name>
+        <condition>
+         <equals> 
+        <property>controls/armament/stick-selector</property>
+        <value>3</value>
+      </equals> 
+        </condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>misile</object-name>
+        <condition>
+         <equals> 
+        <property>controls/armament/stick-selector</property>
+        <value>2</value>
+      </equals> 
+	   <input>
+      <property>controls/armament/name</property>
+    </input>
+        </condition>
+    </animation>
+	
+	 <animation>
+        <type>select</type>
+        <object-name>misile</object-name>
+        <condition>
+         <equals> 
+        <property>controls/armament/stick-selector</property>
+        <value>3</value>
+      </equals> 
+	   <input>
+      <property>controls/armament/name</property>
+    </input>
+        </condition>
+    </animation>
+
+
+</PropertyList>

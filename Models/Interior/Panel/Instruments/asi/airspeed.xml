@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<!-- Airspeed Indicator, by Dave Culp -->
+
+<PropertyList>
+
+ <path>AS.ac</path>
+
+ <!--  Instrument Lighting -->
+ <animation>
+  <type>material</type>
+  <object-name>face</object-name>
+  <object-name>Airspeedneedle</object-name>
+   <emission>
+     <red>0.75</red>
+     <green>0.75</green>
+     <blue>0.75</blue>
+   </emission> 
+ </animation> 
+
+ <!-- Airspeed Needle -->
+ <animation>
+  <type>rotate</type>
+  <object-name>Airspeedneedle</object-name>
+  <property>velocities/airspeed-kt</property>
+  <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>100</ind>
+      <dep>45.5</dep>
+    </entry>
+    <entry>
+      <ind>200</ind>
+      <dep>122.0</dep>
+    </entry>
+    <entry>
+      <ind>300</ind>
+      <dep>187.5</dep>
+    </entry>
+    <entry>
+      <ind>400</ind>
+      <dep>247.0</dep>
+    </entry>
+    <entry>
+      <ind>500</ind>
+      <dep>273</dep>
+    </entry>
+    <entry>
+      <ind>800</ind>
+      <dep>350.0</dep>
+    </entry>
+  </interpolation>   
+  <center>
+   <x-m>-0.0196</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+ <!--  Mach Digits -->
+ <animation>
+    <type>textranslate</type>
+    <object-name>ones</object-name>
+    <property>velocities/mach</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <scroll>0.001</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>tenths</object-name>
+    <property>velocities/mach</property>
+    <factor>1</factor>
+    <step>0.1</step>
+    <scroll>0.001</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  <animation>
+    <type>textranslate</type>
+    <object-name>hundredths</object-name>
+    <property>velocities/mach</property>
+    <factor>10</factor>
+    <step>0.01</step>
+    <scroll>0.001</scroll>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5</max-m>
+ </animation>
+
+</PropertyList>

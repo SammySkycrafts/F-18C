@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!-- Threat indicator-->
+
+<PropertyList>
+
+ <path>threat.ac</path>
+
+ <animation>
+    <object-name>rect</object-name>
+  </animation>
+
+ 
+</PropertyList>

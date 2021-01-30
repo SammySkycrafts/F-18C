@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>percentfuel.ac</path>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>needle1</object-name>
+    <property>consumables/fuel/total-fuel-norm</property>
+    <factor>1</factor>
+    <center>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+    </center>
+ <interpolation>
+  <entry><ind>0</ind><dep>0</dep></entry>
+  <entry><ind>1.0</ind><dep>270</dep></entry>
+ </interpolation>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>needle2</object-name>
+     <property>consumables/fuel/total-fuel-norm</property>
+     <factor>1</factor>
+       <center>
+        <x-m>0</x-m>
+        <y-m>-0.007</y-m>
+        <z-m>0.009</z-m>
+       </center>
+ <interpolation>
+  <entry><ind>0</ind><dep>0</dep></entry>
+  <entry><ind>0.05</ind><dep>180</dep></entry>
+  <entry><ind>0.1</ind><dep>360</dep></entry>
+  <entry><ind>1</ind><dep>3600</dep></entry>
+ </interpolation>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>needle3</object-name>
+     <property>consumables/fuel/total-fuel-norm</property>
+     <factor>1</factor>
+       <center>
+        <x-m>0</x-m>
+        <y-m>0.007</y-m>
+        <z-m>0.009</z-m>
+       </center>
+ <interpolation>
+  <entry><ind>0</ind><dep>0</dep></entry>
+  <entry><ind>0.05</ind><dep>180</dep></entry>
+  <entry><ind>0.1</ind><dep>360</dep></entry>
+  <entry><ind>1</ind><dep>3600</dep></entry>
+ </interpolation>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

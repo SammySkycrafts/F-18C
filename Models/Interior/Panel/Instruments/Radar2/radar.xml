@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+   <model>
+        <name>MyRadar</name>
+        <path>mfd.xml</path>
+            <offsets>
+              <x-m>  0.001</x-m>
+              <y-m> -0.001</y-m>
+              <z-m> -0.0011 </z-m>
+            </offsets>
+  </model>
+ 
+
+
+<!--
+  <model>
+        <path>radar.ac</path>
+  </model>
+
+  <animation>
+    
+    <object-name>fond</object-name>
+    <object-name>ecran</object-name>
+    
+  </animation>
+
+<animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>ecran</object-name>    
+    <emission>      
+      <factor>0.13/</factor>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+-->
+
+</PropertyList>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>400</max-m>
+    </animation>
+
+<path>interior.ac</path>
+
+  
+  <!-- pilots -->
+<model>
+<name>pilot</name>
+    <path>Aircraft/F-18C/Models/Interior/pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.85 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0.7 </z-m>
+	  <pitch-deg>10</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  
+  
+  
+  <!-- Pilot invisible from internally -->
+
+    <animation>
+        <type>select</type>
+        <object-name>pilot</object-name>
+		
+		<condition>
+<not>
+            <property>sim/current-view/internal</property>
+</not>
+        </condition>
+    </animation>		
+  
+  
+  <!-- Dash-->
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+  
+ 
+ 
+ 
+
+</PropertyList>
+

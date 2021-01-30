@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>50</max-m>
+    </animation>
+	
+	<animation>
+<type>material</type>
+<object-name>Interior_1.001</object-name>
+<emission>
+<factor-prop>controls/lighting/landing-lights</factor-prop>
+<red>   0.5 </red>
+<green> 0.5 </green>
+<blue>  0.5 </blue>
+</emission>
+</animation>	
+
+
+	
+	
+	 <!-- Hud Diamond -->
+  
+    <model>
+  
+    <name>HUD_ADDS</name>
+    <path>Aircraft/F-18C/Models/HUD/hud.xml</path>
+    <name>diamond</name>
+    <offsets>
+      <x-m>-4.33</x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m>1.15</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+	
+  
+  <!-- Instruments -->
+  
+    <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/pilot-right-mfd.xml</path>
+    <offsets>
+       <x-m>0.036</x-m>
+      <y-m>0</y-m>
+      <z-m>0.365</z-m>
+<pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/comms.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+<pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/centre.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+<pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/left.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+<pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/rwr/rwr.xml</path>
+    <offsets>
+      <x-m> -4.545 </x-m>
+      <y-m> 0.24 </y-m>
+      <z-m>0.77 </z-m>
+<pitch-deg>-15</pitch-deg>
+    </offsets>
+  </model>
+ 
+
+<model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/altimeter/altimeter.xml</path>
+    <offsets>
+      <x-m> -4.543 </x-m>
+      <y-m> 0.1322 </y-m>
+      <z-m>0.782 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -4.533 </x-m>
+      <y-m> 0.127 </y-m>
+      <z-m>0.7437 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/GMeter/gmeter.xml</path>
+    <offsets>
+      <x-m> -4.53 </x-m>
+      <y-m> 0.165 </y-m>
+      <z-m>0.744 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/asi/airspeed.xml</path>
+    <offsets>
+      <x-m> -4.545 </x-m>
+      <y-m> 0.1765 </y-m>
+      <z-m>0.779 </z-m>
+<pitch-deg>-15</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/AI/AI.xml</path>
+    <offsets>
+      <x-m> -4.543 </x-m>
+      <y-m> -0.122 </y-m>
+      <z-m>0.777 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/AoA/aoa-gauge.xml</path>
+    <offsets>
+      <x-m> -4.543 </x-m>
+      <y-m> -0.164 </y-m>
+      <z-m>0.7765 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/AoA/aoa_indexer.xml</path>
+    <offsets>
+      <x-m> -4.665 </x-m>
+      <y-m> -0.11 </y-m>
+      <z-m>1.103 </z-m>
+<pitch-deg>-10</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/percentfuel/percentfuel.xml</path>
+    <offsets>
+      <x-m> -4.533 </x-m>
+      <y-m> -0.113 </y-m>
+      <z-m>0.7437 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/rpm/rpm-1.xml</path>
+    <offsets>
+     <x-m> -4.543 </x-m>
+      <y-m> -0.202 </y-m>
+      <z-m>0.782 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+	<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.8</y-offset>
+    <z-offset>0.8</z-offset>
+   </animation>
+  </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/rpm/rpm-2.xml</path>
+    <offsets>
+     <x-m> -4.537 </x-m>
+      <y-m> -0.202 </y-m>
+      <z-m>0.752 </z-m>
+<pitch-deg>-18</pitch-deg>
+    </offsets>
+	<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.8</y-offset>
+    <z-offset>0.8</z-offset>
+   </animation>
+  </overlay>
+  </model>
+  
+  <!-- MFD content -->
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/Radar/Gradar.xml</path>
+    <offsets>
+      <x-m> -4.565 </x-m>
+      <y-m> -0.15 </y-m>
+      <z-m>0.88 </z-m>
+<pitch-deg>-17</pitch-deg>
+    </offsets>
+	<overlay>
+		 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.8</y-offset>
+    <z-offset>0.8</z-offset>
+   </animation>
+  </overlay>
+  </model>
+  
+  <!--
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/Radar/radar.xml</path>
+    <offsets>
+      <x-m> -4.57 </x-m>
+      <y-m> 0.161 </y-m>
+      <z-m>0.8745 </z-m>
+<pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  -->
+  
+  
+  <model>
+    <path>Aircraft/F-18C/Models/Interior/Panel/Instruments/map/map.xml</path>
+    <offsets>
+      <x-m> -4.527 </x-m>
+      <y-m> 0.01 </y-m>
+      <z-m>0.78 </z-m>
+<pitch-deg>-17</pitch-deg>
+    </offsets>
+	
+  </model>
+  
+  
+ 
+  
+  
+</PropertyList>
+

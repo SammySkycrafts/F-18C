@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>vsi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+   
+  </animation>
+
+ 
+
+ 
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.7 </green>
+      <blue>  0.5 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <name>needle</name>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+    <interpolation>
+      <entry><ind> -6000 </ind><dep> 180 </dep></entry>
+      <entry><ind> -4000 </ind><dep> 144 </dep></entry>
+      <entry><ind> -2000 </ind><dep> 103 </dep></entry>
+      <entry><ind> -1000 </ind><dep>  58 </dep></entry>
+      <entry><ind>  -500 </ind><dep>  27 </dep></entry>
+      <entry><ind>     0 </ind><dep>   0 </dep></entry>
+      <entry><ind>   500 </ind><dep>  30 </dep></entry>
+      <entry><ind>  1000 </ind><dep>  57 </dep></entry>
+      <entry><ind>  2000 </ind><dep> 101 </dep></entry>
+      <entry><ind>  4000 </ind><dep> 149 </dep></entry> 
+      <entry><ind>  6000 </ind><dep> 180 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center> 
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

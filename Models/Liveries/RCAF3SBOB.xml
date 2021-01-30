@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RCAF 3 Sqdn Demo - Battle of Britain</name>
+     <fuselage>Liveries/RCAF3SBOB/fuselage.jpg</fuselage>
+	 <wings>Liveries/RCAF3SBOB/wing-stab.jpg</wings>
+	 <vstab>Liveries/RCAF3SBOB/rudder.jpg</vstab>
+     <texture-pilot>Liveries/RCAF3SBOB/RCAFpilot.jpg</texture-pilot>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+
+
+
+<PropertyList>
+	<path>flight-indicator.ac</path>
+
+	<animation> 
+		<type>select</type>
+		<object-name>flap-up</object-name>
+		<condition>
+		<equals>
+			<property>surface-positions/flap-pos-norm</property>
+			<value>0</value>
+		</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>flap-TO</object-name>
+		<condition>
+		<equals>
+			<property>surface-positions/flap-pos-norm</property>
+			<value>0.75</value>
+		</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>flap-LD</object-name>
+		<condition>
+		<equals>
+			<property>surface-positions/flap-pos-norm</property>
+			<value>1</value>
+		</equals>
+		</condition>
+	</animation>
+
+	<animation> 
+		<type>select</type>
+		<object-name>slat-up</object-name>
+		<condition>
+			<equals>
+				<property>surface-positions/flap-pos-norm</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>slat-down</object-name>
+		<condition>
+			<greater-than-equals>
+				<property>surface-positions/flap-pos-norm</property>
+				<value>0.75</value>
+			</greater-than-equals>
+		</condition>
+	</animation>
+
+	<animation> 
+		<type>select</type>
+		<object-name>brake-in</object-name>
+		<condition>
+			<equals>
+				<property>surface-positions/spoiler-pos-norm</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>brake-up</object-name>
+		<condition>
+			<equals>
+				<property>surface-positions/spoiler-pos-norm</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
+
+
+	<animation> 
+		<type>select</type>
+		<object-name>NW-up</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>NW-down</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[0]/position-norm</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
+
+	<animation> 
+		<type>select</type>
+		<object-name>LW-up</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[1]/position-norm</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>LW-down</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[1]/position-norm</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
+
+	<animation> 
+		<type>select</type>
+		<object-name>RW-up</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[2]/position-norm</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
+	<animation> 
+		<type>select</type>
+		<object-name>RW-down</object-name>
+		<condition>
+			<equals>
+				<property>gear/gear[2]/position-norm</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
+
+
+
+<!-- lighting -->
+
+	<animation> 
+		<object-name>mount</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/panel-norm</factor-prop>
+			<red>0.45</red>
+			<green>0.34</green>
+			<blue>0.18</blue>
+		</emission>
+	</animation>
+
+
+
+	<animation> 
+		<object-name>flap-barberpole</object-name>
+		<object-name>stab-barberpole</object-name>
+		<object-name>brake-barberpole</object-name>
+		<object-name>slat-barberpole</object-name>
+		<object-name>RW-barberpole</object-name>
+		<object-name>NW-barberpole</object-name>
+		<object-name>LW-barberpole</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<object-name>flap-up</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation>
+		<object-name>flap-TO</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation>
+		<object-name>flap-LD</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+
+	<animation> 
+		<object-name>stab-restricted</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation> 
+		<object-name>stab-full</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation> 
+		<object-name>brake-in</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation> 
+		<object-name>brake-up</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation> 
+		<object-name>slat-up</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation> 
+		<object-name>slat-down</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation> 
+		<object-name>RW-up</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation> 
+		<object-name>RW-down</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation> 
+		<object-name>NW-up</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation> 
+		<object-name>NW-down</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation> 
+		<object-name>LW-up</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+	<animation> 
+		<object-name>LW-down</object-name>
+		<type>material</type>
+		<emission> 
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.55</green>
+			<blue>0.35</blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<object-name>flight-indicator</object-name>
+		<type>noshadow</type>
+	</animation>
+
+
+
+<!-- LOD -->
+
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>35</max-m>
+	</animation>
+
+</PropertyList>

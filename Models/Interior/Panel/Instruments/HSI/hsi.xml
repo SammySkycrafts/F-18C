@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!--
+Author : Syd Adams
+STBY HSI
+-->
+<PropertyList>
+
+    <path>hsi.ac</path>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>hdgring</object-name>
+        <property>instrumentation/heading-indicator/indicated-heading-deg</property>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>CRSneedle2</object-name>
+        <object-name>CRSneedle2.001</object-name>
+        <property>instrumentation/heading-indicator/indicated-heading-deg</property>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>CRSneedle2</object-name>
+        <object-name>CRSneedle2.001</object-name>
+        <property>instrumentation/nav/radials/selected-deg</property>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>CRSneedle2.001</object-name>
+        <property>instrumentation/nav/heading-needle-deflection</property>
+        <interpolation>
+            <entry>
+                <ind>-10.0</ind><dep>-0.013</dep>
+            </entry>
+            <entry>
+                <ind>0.0</ind><dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>10.0</ind><dep>0.013</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>HSI.gsneedle</object-name>
+        <property>instrumentation/nav/gs-needle-deflection</property>
+        <interpolation>
+            <entry>
+                <ind>-10.0</ind><dep>-0.01</dep>
+            </entry>
+            <entry>
+                <ind>0.0</ind><dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>10.0</ind><dep>0.01</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ADF.needle</object-name>
+        <property>instrumentation/adf/indicated-bearing-deg</property>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+</PropertyList>

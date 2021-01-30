@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>aoa_indexer.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>too-slow</object-name>
+    <condition>
+      <greater-than>
+        <property>orientation/alpha-deg</property>
+        <property>sim/aoa-indexer/slow-deg</property>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>on-speed</object-name>
+    <condition>
+      <not>
+        <or>
+          <greater-than>
+            <property>orientation/alpha-deg</property>
+            <property>sim/aoa-indexer/too-slow-deg</property>
+          </greater-than>
+          <less-than>
+            <property>orientation/alpha-deg</property>
+            <property>sim/aoa-indexer/too-fast-deg</property>
+          </less-than>
+        </or>
+      </not>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>too-fast</object-name>
+    <condition>
+      <less-than>
+        <property>orientation/alpha-deg</property>
+        <property>sim/aoa-indexer/fast-deg</property>
+      </less-than>
+    </condition>
+  </animation>
+
+</PropertyList>
+

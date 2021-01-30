@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">RCAF 410 Sqdn - Tigermeet 2003</name>
+     <fuselage>Liveries/RCAF410S/fuselage.jpg</fuselage>
+	 <wings>Liveries/RCAF410S/wing-stab.jpg</wings>
+	 <vstab>Liveries/RCAF410S/rudder.jpg</vstab>
+     <texture-pilot>Liveries/RCAF3SBOB/RCAFpilot.jpg</texture-pilot>
+
+   <specular>
+              <red>   0.3 </red>
+              <green> 0.3 </green>
+              <blue>  0.3 </blue>
+            </specular>
+
+            <emission>
+              <red>   0.2 </red>
+              <green> 0.2 </green>
+              <blue>  0.2 </blue>
+            </emission>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
