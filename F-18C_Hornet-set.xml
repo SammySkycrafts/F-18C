@@ -7,7 +7,7 @@
   <description>F/A-18C_Hornet (yasim )</description>
   <author>Mathias Froehlich, StuartC</author>
   <status>1.1</status>
- 
+
   <flight-model>yasim</flight-model>
   <aero>F-18-yasim</aero>  <!-- For FG Versions earlier than 3.2, remove this line -->
    <!--  <aero>F-18old-yasim</aero> -->  <!-- for FG versions earlier than 3.2, un comment this line to use the original FDM -->
@@ -33,7 +33,7 @@
    <path>Aircraft/F-18C/Models/FA-18C_Hornet.xml</path>
   </model>
 
-  <submodels> 
+  <submodels>
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/F-18C/Models/Effects/guns/submodels.xml</path>
       <!-- <path>Aircraft/F-18C/Models/weapons/loads.xml</path> -->
@@ -79,9 +79,9 @@
     <top type="double">25</top>
     <bottom type="double">-120</bottom>
      </clipping>
-   
+
   </hud>
-  
+
   <view n="0">
    <internal archive="y">true</internal>
    <config>
@@ -93,9 +93,9 @@
 
    </config>
   </view>
-  
- 
-  
+
+
+
 
  <view n="100">
 	   <name>Pilot cam</name>
@@ -105,7 +105,7 @@
       <from-model-idx type="int">0</from-model-idx>
        <x-offset-m archive="y">-0.0</x-offset-m>
      <y-offset-m archive="y">1.16</y-offset-m>
-     <z-offset-m archive="y">-4.1</z-offset-m> 
+     <z-offset-m archive="y">-4.1</z-offset-m>
           <pitch-offset-deg>0</pitch-offset-deg>
 		  <heading-offset-deg>180</heading-offset-deg>
           <default-field-of-view-deg>95</default-field-of-view-deg>
@@ -147,52 +147,52 @@
         <path>Aircraft/Generic/generic-electrical.xml</path>
       </electrical>
       <autopilot>
-        <path>Aircraft/F-18C/System/Autopilot.xml</path>
+        <path>Aircraft/F-18C/Systems/Autopilot.xml</path>
       </autopilot>
   <refuel>
   <type>probe</type>
   <serviceable type="bool">true</serviceable>
  </refuel>
-    
+
     </systems>
 <mp-systems>
 					<radar-enabled type="bool">true</radar-enabled>
 					<ecm-rwr-enabled type="bool">true</ecm-rwr-enabled>
 					<combat-enabled type="bool">true</combat-enabled>
 				</mp-systems>
-				
+
  <multiplay n="0">
       <chat_display>1</chat_display>
       <generic n="0">
-	
-	
+
+
       <!-- Nav lights on -->
       <int n="0" alias="/controls/lighting/nav-lights-switch" />
       <!-- Beacon on -->
       <int n="1" alias="/controls/lighting/beacon-switch" />
-      
+
       <!-- int[2] reserved for radar -->
-      
+
       <!-- Landing lights on -->
       <int n="3" alias="/controls/lighting/landing-lights-switch" />
-	  
+
 	    <int n="5" alias="/engines/engine[0]/state" />
 	  <int n="6" alias="/engines/engine[1]/state" />
 	  <int n="7" alias="/sim/crashed" />
-      
-       
+
+
 	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
-       
+
 	 <float n="8" alias="/engines/engine[0]/afterburner" /> <!-- Reheat Left Engine -->
 	 <float n="9" alias="/engines/engine[1]/afterburner" /> <!-- Reheat Right Engine -->
 	<float n="15" alias="/velocities/mach" /> <!-- Mach for Multiplayer Sound -->
 	 <float n="16" alias="/engines/engine[0]/thrust-lbs" /> <!-- Thrust for Multiplayer Sound -->
 	 <float n="17" alias="/engines/engine[1]/thrust-lbs" /> <!-- Thrust for Multiplayer Sound -->
-	
+
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
         <!-- <string n="1" type"string"/> RESERVED FOR MODE WHEELS/AMPHIBIOUS -->
       </generic>
-    </multiplay>				
+    </multiplay>
 
 
 <weight n="0">
@@ -216,7 +216,7 @@
 <opt>
 <name>NONE</name>
 <lbs>0</lbs>
-</opt> 
+</opt>
 <opt>
 <name>AIM-7</name>
 <lbs>510.0</lbs>
@@ -338,7 +338,7 @@
 <opt>
 <name>NONE</name>
 <lbs>0</lbs>
-</opt> 
+</opt>
 
 </weight>
 
@@ -349,7 +349,7 @@
 <opt>
 <name>NONE</name>
 <lbs>0</lbs>
-</opt> 
+</opt>
 
 </weight>
 
@@ -422,7 +422,7 @@
 <opt>
 <name>NONE</name>
 <lbs>0</lbs>
-</opt> 
+</opt>
 
 </weight>
 
@@ -433,7 +433,7 @@
 <opt>
 <name>NONE</name>
 <lbs>0</lbs>
-</opt> 
+</opt>
 
 </weight>
 
@@ -585,7 +585,7 @@
         <name>d</name>
         <desc>Open/Close canopy</desc>
       </key>
-	
+
 	   <key>
         <name>w</name>
         <desc>Weapon mode select</desc>
@@ -606,7 +606,7 @@
         <name>l</name>
         <desc>engage launch bar</desc>
       </key>
-	  
+
 	   <key>
         <name>8</name>
         <desc>Launch flares</desc>
@@ -634,8 +634,8 @@
       <key>
         <name>Ctrl-n</name>
         <desc>Previous Target</desc>
-      </key>  
-      
+      </key>
+
        <line>Drop tanks:-</line>
 	  <line> The Drop tanks self regulate. You just need to put fuel in them. </line>
       <line>When selected  the drop tanks will feed first and your internal tanks will be disabled.</line>
@@ -667,8 +667,8 @@
   <type>probe</type>
   <serviceable type="bool">true</serviceable>
  </refuel>
-    
-    </systems> 
+
+    </systems>
 
 
 <!-- set up control properties for YASim -->
@@ -717,7 +717,7 @@
 	   <station n="12">
         <release type="bool">false</release>
       </station>
-   
+
     </armament>
 <gear>
       <brake-parking type="double">1.0</brake-parking>
@@ -744,7 +744,7 @@
         <tank-num type="int">1</tank-num>
         <level-gal_us archive="y">500</level-gal_us>
       </tank>
-      
+
       <tank n="2">
        <tank-num type="int">1</tank-num>
         <level-gal_us archive="y">300</level-gal_us>
@@ -753,7 +753,7 @@
        <tank-num type="int">1</tank-num>
         <level-gal_us archive="y">300</level-gal_us>
       </tank>
-	 
+
       <tank n="4">
         <name>Left-DropTank</name>
         <selected type="bool">false</selected>
@@ -766,7 +766,7 @@
         <name>Right-DropTank</name>
         <selected type="bool">false</selected>
       </tank>
-	  
+
     </fuel>
   </consumables>
 
@@ -826,7 +826,7 @@
         <tws-auto type="bool">false</tws-auto>
       </mode>
     </radar>
- 
+
     <radar2>
       <sweep-width-m type="double">0.0844</sweep-width-m>
       <range-width-m type="double">0.0846</range-width-m>
@@ -853,7 +853,7 @@
         <hi-elev-markers type="bool">false</hi-elev-markers>
       </settings>
     </terrain-radar>
-	
+
 	 <efis>
 
 			<ecam>
@@ -863,7 +863,7 @@
 					<display-mode type="string">VOR</display-mode>
 					<display-mode-knob type="int">2</display-mode-knob>
 					<display-range type="int">20</display-range>
-				
+
 			</nd>
 			<input>
 				<vor-adf-1 type="int">1</vor-adf-1>
@@ -879,7 +879,7 @@
 				<taxi type="bool">1</taxi>
 			</input>
 
-		
+
 		</efis>
   </instrumentation>
 
@@ -899,14 +899,14 @@
    <file>Aircraft/F-18C/Nasal/fuel.nas</file>
   </F-18D_fuel>
 <radar>
-<file>Aircraft/F-18C/Nasal/radar.nas</file> 
+<file>Aircraft/F-18C/Nasal/radar.nas</file>
     </radar>
 <radar2>
 <file>Aircraft/F-18C/Nasal/radar2.nas</file>
 </radar2>
 <rwr>
  <file>Aircraft/F-18C/Models/Interior/Panel/Instruments/Radar/rwr.nas</file>
-</rwr> 
+</rwr>
  <hud>
       <file>Aircraft/F-18C/Nasal/MiscRwr.nas</file>
     </hud>
@@ -917,15 +917,15 @@
       <file>Aircraft/F-18C/Nasal/weapons.nas</file>
       <file>Aircraft/F-18C/Nasal/revi.nas</file>
     </guns>
-	
+
 	<lights>
 		   <file>Aircraft/F-18C/Nasal/lights.nas</file>
 		</lights>
 
 <terrain-map>
- 
+
 <file>Aircraft/F-18C/Nasal/terrain-map.nas</file>
- 
+
 </terrain-map>
 
 <low>
@@ -933,21 +933,21 @@
 </low>
 
 
-<aar> 
+<aar>
 <file>Aircraft/Generic/aar.nas</file>
 </aar>
 
  <engines>
    <file>Aircraft/F-18C/Nasal/generic-yasim-engine.nas</file>
   </engines>
-  
+
   <emu>
    <file>Aircraft/F-18C/Nasal/emu.nas</file>
   </emu>
  <lights>
       <file>Aircraft/F-18C/Nasal/Lights.nas</file>
     </lights>
-	
+
 <load>
       <file>Aircraft/F-18C/Nasal/ext_stores.nas</file>
     </load>
@@ -955,9 +955,8 @@
       <file>Aircraft/F-18C/Nasal/missile.nas</file>
       <file>Aircraft/F-18C/Nasal/Loading_Missiles.nas</file>
     </missile>
-    	
+
 </nasal>
 
 
 </PropertyList>
-

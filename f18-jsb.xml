@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
+<fdm_config name="F/A-18C_Hornet" version="2.0" release="DEVELOPMENT"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
+
+<fileheader>
+  <author>Mathias Froehlich, StuartC, SammySkycrafts</author>
+  <filecreationdate> 2007-06-29 </filecreationdate>
+  <version> $Revision: 3.00 $ </version>
+  <license>
+    <licenseName>GPL (General Public License)</licenseName>
+    <licenseURL>http://www.gnu.org/licenses/gpl.html</licenseURL>
+  </license>
+  <description> Models an F/A-18C </description>
+  <note>
+   This model was created using data that is, or has been, publically
+   available by means of technical reports, textbooks, image graphs or
+   published code. This aircraft description file is in no way related
+   to the manufacturer of the real aircraft.
+   Neither the name of (any of) the authors nor the names of (any of) the
+   manufacturers may be used to endorse or promote products derived from
+   this file.
+
+   The data is provided ''as is'' and any express or implied
+   warranties, including, but not limitted to the implied warranties of
+   merchantability and fitness for a particular purpose are disclaimed.
+  </note>
+</fileheader>
+
+
+
+<metrics file="Systems/jsb-metrics"/>
+<mass_balance file="Systems/jsb-mass"/>
+<system file="Systems/Autopilot.xml/">
+
+<submodels>
+  <serviceable type="bool">1</serviceable>
+  <path>Aircraft/F-18C/Systems/f18-submodels.xml</path>
+</submodels>
+
+
+</fdm_config>

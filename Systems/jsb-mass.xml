@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<mass_balance>
+ <documentation>
+ The Center of Gravity location, empty weight, in aircraft's own
+ structural coord system.
+ </documentation>
+ <ixx unit="SLUG*FT2">  </ixx>
+ <iyy unit="SLUG*FT2">  </iyy>
+ <izz unit="SLUG*FT2">  </izz>
+ <ixy unit="SLUG*FT2"> 0 </ixy>
+ <emptywt unit="LBS"> 23832 </emptywt>
+ <location name="CG" unit="IN">
+ <x> 459.2 </x>
+ <y> 0 </y>
+ <z> -31.8 </z>
+ </location>
+
+ <!--<pointmass name="pylon1">
+ <weight unit="LBS"> 0 </weight>
+ <location name="POINTMASS" unit="IN">
+ <x> 460.0 </x>
+ <y> 0 </y>
+ <z> -31.8 </z>
+ </location>
+ </pointmass>
+</mass_balance>-->
