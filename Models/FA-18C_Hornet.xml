@@ -3,20 +3,20 @@
 <PropertyList include="F-15_StrikeEagle-bombableinclude.xml">
 
  <path>F-18.ac</path>
- 
+
  <animation>
         <type>range</type>
         <min-m>0</min-m>
         <max-m>20000</max-m>
     </animation>
- 
+
  <!-- MP sound call -->
   <sound><path>Aircraft/F-18C/Sounds/mp-sound.xml</path></sound>
-  
+
   <nasal>
   <load>
    var livery_update = aircraft.livery_update.new("Aircraft/F-18C/Models/Liveries", 50);
-	
+
   <![CDATA[
 var root = cmdarg();
 var rootindex = root.getIndex();
@@ -25,7 +25,7 @@ var mpPath = "/ai/models/multiplayer["~ rootindex ~"]/";
 var lightsPath = mpPath~"lightpack/"; #path to the property node, where all internal values are placed
 
 props.globals.initNode(mpPath~"sim/is-MP-Aircraft", 1, "BOOL");
-      
+
 srand();
 #wherever you want to add randomization of time, use something like:  + rand()*0.05-0.025 (included by default where appropriate)
 
@@ -45,7 +45,7 @@ navStillOn = 1;
 
 
 #I need to set listener on some MP transferred properties; this doesn't seem to work well sometimes, so I mirror them to the original location on any change
-#This also simplifies work as I can use almost the same code for MP as is the local Nasal. Furthermore, I can use meaningful property names in the model XML files instead of referencing the MP properties. 
+#This also simplifies work as I can use almost the same code for MP as is the local Nasal. Furthermore, I can use meaningful property names in the model XML files instead of referencing the MP properties.
 var mpVar = {
 	new: func(propIn, propOut) {
 		var m = { parents: [mpVar] };
@@ -67,7 +67,7 @@ var mpVar = {
 	},
 };
 #init any property copy object needed in this array (anything you need to transfer over MP, but you are using the original paths in your xmls)
-#also used for properties you are using a listener on, or properties which you maybe want to manipulate during the <unload> 
+#also used for properties you are using a listener on, or properties which you maybe want to manipulate during the <unload>
 #if you're just using the pack, change the values according to the MP bindings in the -set.xml file
 #you don't need to delete the entries if the path is nil - it gets skipped automatically and the MP path is just ignored
 var mirrorValues = [
@@ -147,12 +147,12 @@ var lightCycle = {
 	},
 };
 
-#By default, the switch property is initialized to 1 (only if no value is already assigned). Don't change the class implementation! To override this, set the property manually. You don't need to care if any other code already does it for you. 
+#By default, the switch property is initialized to 1 (only if no value is already assigned). Don't change the class implementation! To override this, set the property manually. You don't need to care if any other code already does it for you.
 var navLights = nil;
 if(!navStillOn) {
 	navLights = lightCycle.new(navSwitch, lightsPath~"nav-lights-intensity");
 	### Uncomment and tune those to customize times ###
-	#navLights.fadeIn = 0.4; #fade in time 
+	#navLights.fadeIn = 0.4; #fade in time
 	#navLights.fadeOut = 0.4; #fade out time
 	#navLights.stayOn = 3 + rand()*0.05-0.025; #stable on period
 	#navLights.stayOff = 0.6; #stable off period
@@ -164,16 +164,16 @@ if(!navStillOn) {
 var beacon = nil;
 if(beaconSwitch!=nil) {
 	props.globals.initNode(beaconSwitch, 1, "BOOL");
-	beacon = aircraft.light.new(lightsPath~"beacon-state", 
+	beacon = aircraft.light.new(lightsPath~"beacon-state",
 		[0.0, 1.0 + rand()*0.05-0.025], beaconSwitch);
 }
-	
-	
+
+
 ### STROBE ###
 var strobe = nil;
 if(strobeSwitch!=nil) {
 	props.globals.initNode(strobeSwitch, 1, "BOOL");
-	strobe = aircraft.light.new(lightsPath~"strobe-state", 
+	strobe = aircraft.light.new(lightsPath~"strobe-state",
 		[0.0, 0.87 + rand()*0.05-0.025], strobeSwitch);
 }
 
@@ -195,7 +195,7 @@ var lightFadeInOut = {
 		props.globals.initNode(propSwitch, 1, "BOOL");
 		m.isOn = getprop(propSwitch);
 		props.globals.initNode(propOut, m.isOn, "DOUBLE");
-		m.listen = setlistener(propSwitch, 
+		m.listen = setlistener(propSwitch,
 			func {
 				if(m.isOn and !getprop(propSwitch)) {
 					interpolate(propOut, 0, m.fadeOut);
@@ -241,7 +241,7 @@ if(navStillOn) {
       mirrorTimer.stop();
       mirrorTimer = nil;
       mirrorValues = nil;
-      
+
       #cleanly destroy nav lights
       if(navStillOn) {
       	navLights.del();
@@ -252,30 +252,30 @@ if(navStillOn) {
       	if(navSwitch!=nil) navLights.cycleTimer = nil;
       	navLights = nil;
       }
-      
+
       #cleanly destroy beacon
       if(beaconSwitch!=nil) setprop(beaconSwitch, 0);
       beacon.del();
       beacon = nil;
-      
+
       #cleanly destroy strobe
       if(strobeSwitch!=nil) setprop(strobeSwitch, 0);
       strobe.del();
       strobe = nil;
-      
+
       #cleanly destroy light fade in/out animation objects
       fadeLanding.del();
       fadeTaxi.del();
       fadeProbe.del();
       fadeWhite.del();
-      
+
       ### the rest of your model unload embedded Nasal code ###
-  
+
    livery_update.stop();
   </unload>
  </nasal>
-  
-  
+
+
   <!-- livery selection -->
  <animation>
   <type>material</type>
@@ -319,11 +319,11 @@ if(navStillOn) {
   <texture-prop>fuselage</texture-prop>
   <texture>fuselage.jpg</texture>
  </animation>
- 
+
  <!-- wings -->
  <animation>
   <type>material</type>
-  
+
   <object-name>InnerWingTop</object-name>
    <object-name>InnerWingBottom</object-name>
     <object-name>InnerWingTop</object-name>
@@ -346,7 +346,7 @@ if(navStillOn) {
   <object-name>RightAileron</object-name>
   <object-name>RightFlap</object-name>
   <object-name>RightFlapTopUpside</object-name>
- 
+
    <object-name>RightOutboard</object-name>
    <object-name>RightBigWingBit</object-name>
   <object-name>RightOuterWing</object-name>
@@ -368,19 +368,19 @@ if(navStillOn) {
     <object-name>InnerLeftLeadingEdgeFlap</object-name>
 	 <object-name>InnerWingBits</object-name>
 	  <object-name>OuterWingBit</object-name>
-	  
+
   <property-base>sim/model/livery</property-base>
   <texture-prop>wings</texture-prop>
   <texture>wing-stab.jpg</texture>
  </animation>
- 
+
  <!-- V-stab -->
- 
+
  <animation>
   <type>material</type>
    <object-name>LeftFinBody</object-name>
   <object-name>LeftRudder</object-name>
- 
+
   <object-name>RightFinBody</object-name>
   <object-name>RightRudder</object-name>
     <property-base>sim/model/livery</property-base>
@@ -400,8 +400,8 @@ if(navStillOn) {
         <texture-prop>texture-pilot</texture-prop>
         <texture>fighter_pilot.png</texture>
     </animation>
-  
-  
+
+
     <!--
   <animation>
     <type>shader</type>
@@ -412,20 +412,20 @@ if(navStillOn) {
 
   </animation>
   -->
-  
+
   <effect>
       <inherits-from>Effects/model-transparent</inherits-from>
       <object-name>CanopyGlass</object-name>
 <object-name>CanopyGlas</object-name>
    </effect>
-  
+
 <animation>
     <type>noshadow</type>
     <object-name>Cockpit</object-name>
-    
+
   </animation>
-  
-  
+
+
    <!-- parts invisible from internally -->
 
     <animation>
@@ -437,10 +437,10 @@ if(navStillOn) {
             <property>sim/current-view/internal</property>
 </not>
         </condition>
-    </animation>		
-  
+    </animation>
 
-  
+
+
   <!-- cockpit -->
   <model>
     <path>Aircraft/F-18C/Models/Interior/interior.xml</path>
@@ -451,11 +451,11 @@ if(navStillOn) {
 
     </offsets>
   </model>
-  
+
   <!-- Hud Diamond -->
-  
+
     <model>
-  
+
     <name>HUD_ADDS</name>
     <path>Aircraft/F-18C/Models/HUD/hud.xml</path>
     <name>diamond</name>
@@ -466,9 +466,9 @@ if(navStillOn) {
       <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
-  
+
   <!-- external Stores -->
- 
+
  <model>
   <name>Stores</name>
   <path>Aircraft/F-18C/Models/weapons/loads.xml</path>
@@ -487,10 +487,6 @@ if(navStillOn) {
   <object-name>RightBigWingBit</object-name>
   <object-name>RightOuterWing</object-name>
  <object-name>right-aim9-pos-1</object-name>
-  <object-name>RightWingPositionLightOn</object-name>
-  <object-name>RightWingPositionLightOff</object-name>
-  <object-name>RightWingPositionLight2On</object-name>
-  <object-name>RightWingPositionLight2Off</object-name>
 </animation>
 
 <animation>
@@ -515,10 +511,6 @@ if(navStillOn) {
   <object-name>LeftBigWingBit</object-name>
   <object-name>LeftOuterWing</object-name>
   <object-name>left-aim9-pos-1</object-name>
-  <object-name>LeftWingPositionLightOn</object-name>
-  <object-name>LeftWingPositionLightOff</object-name>
-  <object-name>LeftWingPositionLight2On</object-name>
-  <object-name>LeftWingPositionLight2Off</object-name>
 </animation>
 
   <animation>
@@ -535,9 +527,9 @@ if(navStillOn) {
       <z2-m> 0.17 </z2-m>
     </axis>
   </animation>
- 
-  
- 
+
+
+
 
  <!-- Right Aileron. Two moving parts. -->
  <animation>
@@ -780,7 +772,7 @@ if(navStillOn) {
    <z>0.0</z>
   </axis>
  </animation>
- 
+
  <animation>
   <type>rotate</type>
   <object-name>RightStabilizer</object-name>
@@ -814,7 +806,7 @@ if(navStillOn) {
    <z>0.0</z>
   </axis>
  </animation>
- 
+
  <animation>
   <type>rotate</type>
   <object-name>LeftStabilizer</object-name>
@@ -858,20 +850,20 @@ if(navStillOn) {
   </condition>
  </animation>
 
- 
 
 
-  
+
+
   <!-- Fuel probe anim -->
-  
+
   <!-- for future use, parts for fuel probe animation
    <object-name>Refuel-cover</object-name>
     <object-name>refuel-probe</object-name>
   -->
-  
-  
+
+
   <!-- fuel hose animation -->
- 
+
  <animation>
     <type>rotate</type>
     <object-name>Refuel-cover</object-name>
@@ -891,7 +883,7 @@ if(navStillOn) {
 			<z>0.129442</z>
 		</axis>
   </animation>
-  
+
   <animation>
     <type>rotate</type>
        <object-name>refuel-probe</object-name>
@@ -911,7 +903,7 @@ if(navStillOn) {
 			<z>0.129442</z>
 		</axis>
   </animation>
-  
+
   <animation>
     <type>rotate</type>
     <object-name>FuelHoseStrut</object-name>
@@ -932,7 +924,7 @@ if(navStillOn) {
 			<z>0.057686</z>
 		</axis>
   </animation>
-  
+
   <animation>
     <type>translate</type>
       <object-name>FuelHose1</object-name>
@@ -948,10 +940,10 @@ if(navStillOn) {
 			<z>0.044651</z>
 		</axis>
   </animation>
-  
-  
-  
-  
+
+
+
+
 <!-- Grear anims -->
 
 <!-- Gear disapears when raised -->
@@ -992,13 +984,13 @@ if(navStillOn) {
 		<object-name>LiftArm4</object-name>
 		<object-name>LeftUpperArm2</object-name>
 		<object-name>Shock4</object-name>
-		
+
         <condition>
         <property>gear/gear[0]/position-norm</property>
         </condition>
     </animation>
-	
-	
+
+
 <!-- Nose gear flaps animation -->
  <animation>
   <type>rotate</type>
@@ -1284,8 +1276,8 @@ if(navStillOn) {
 <!--  Smoke and lights -->
 
 <!-- Lights -->
-	
-	
+
+
 <model>
 	<path>Aircraft/F-18C/Models/Lights/LightPack.xml</path>
 	<offsets>
@@ -1294,7 +1286,7 @@ if(navStillOn) {
 	<z-m>0</z-m>
 	</offsets>
 	</model>
-	
+
 
 <!-- Smoke n Flames -->
 
@@ -1352,7 +1344,7 @@ if(navStillOn) {
   </model>
 
   <!-- Les flammes -->
-  
+
   <!--
  <model>
 	<path>Aircraft/F-18C/Models/Effects/Afterburner/AfterBurner.xml</path>
@@ -1363,7 +1355,7 @@ if(navStillOn) {
 	<pitch-deg>90</pitch-deg>
 	</offsets>
 	</model>
-	
+
 	<model>
 	<path>Aircraft/F-18C/Models/Effects/Afterburner/AfterBurner.xml</path>
 	<offsets>
@@ -1374,7 +1366,7 @@ if(navStillOn) {
 	</offsets>
 	</model>
 	-->
-	
+
 	 <model>
 	<path>Aircraft/F-18C/Models/Effects/Afterburner/EJ200-L.xml</path>
 	<offsets>
@@ -1384,7 +1376,7 @@ if(navStillOn) {
 	<pitch-deg>0</pitch-deg>
 	</offsets>
 	</model>
-	
+
 	<model>
 	<path>Aircraft/F-18C/Models/Effects/Afterburner/EJ200-R.xml</path>
 	<offsets>
@@ -1394,7 +1386,7 @@ if(navStillOn) {
 	<pitch-deg>0</pitch-deg>
 	</offsets>
 	</model>
-	
+
   <!-- Gauche -->
   <model>
     <path>Aircraft/F-18C/Models/Effects/tiptrail/tiptrail.xml</path>
@@ -1475,7 +1467,7 @@ if(navStillOn) {
 		 <pitch-deg>0</pitch-deg>
 	 </offsets>
  </model>
-  
+
   <animation>
 	 <type>translate</type>
 	 <object-name>aircraft_wash_l</object-name>
@@ -1497,15 +1489,15 @@ if(navStillOn) {
 			 <dep>-90</dep>
 		 </entry>
 	 </interpolation>
-	 
+
 	 <axis>
 		 <x>-1</x>
 		 <y>0</y>
 		 <z>1.0</z>
 	 </axis>
-	 
+
  </animation>
- 
+
  <model>
 		<path>Aircraft/F-18C/Models/Effects/Vapour/Vapour.xml</path>
 		<offsets>
@@ -1517,7 +1509,7 @@ if(navStillOn) {
 			<heading-deg>0</heading-deg>
 		</offsets>
 	</model>
-	
+
 	<model>
 		<path>Aircraft/F-18C/Models/Effects/Vapour/Vapour2.xml</path>
 		<offsets>
@@ -1526,8 +1518,8 @@ if(navStillOn) {
 			<z-m>0.5</z-m>
 			<pitch-deg>0</pitch-deg>
 		</offsets>
-	</model> 
-	
+	</model>
+
 	<model>
 		<path>Aircraft/F-18C/Models/Effects/Vapour/Vapour2.xml</path>
 		<offsets>
@@ -1536,10 +1528,10 @@ if(navStillOn) {
 			<z-m>0.5</z-m>
 			<pitch-deg>0</pitch-deg>
 		</offsets>
-	</model> 
+	</model>
 
  <!-- Nozzles -->
-  
+
   <model>
    <path>Aircraft/F-18C/Models/Effects/nozzles/Nozzles.xml</path>
    <offsets>
@@ -1549,7 +1541,7 @@ if(navStillOn) {
      <pitch-deg>0</pitch-deg>
    </offsets>
  </model>
- 
+
  <model>
    <path>Aircraft/F-18C/Models/Effects/nozzles/Nozzles.xml</path>
    <offsets>
@@ -1559,7 +1551,7 @@ if(navStillOn) {
      <pitch-deg>0</pitch-deg>
    </offsets>
  </model>
- 
+
 <!-- arrestor hook -->
  <animation>
  <type>rotate</type>
@@ -1624,5 +1616,5 @@ if(navStillOn) {
 
 
 
- 
+
 </PropertyList>
