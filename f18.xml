@@ -33,7 +33,7 @@
    <location name="VRP" unit="IN">
      <x>     0.0 </x>
      <y>     0.0 </y>
-     <z>     -2.0 </z>
+     <z>     -10.0 </z>
    </location>
  </metrics>
 
@@ -223,11 +223,11 @@
  </ground_reactions>
 
  <system file="Propulsion.xml"/>
- <system file="Aircraft control.xml"/>
- <system file="Landing Gear.xml"/>
+ <system file="Aircraftcontrol.xml"/>
+ <system file="LandingGear.xml"/>
  <system file="Flaps.xml"/>
  <system file="Speedbrake.xml"/>
- <system file="Arrestor Hook.xml"/>
+ <system file="ArrestorHook.xml"/>
  <system file="Catapult.xml"/>
 
  <flight_control name="FCS: f18">
