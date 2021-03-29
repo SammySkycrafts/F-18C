@@ -4,19 +4,17 @@
 
  <sim>
 
-  <description>F/A-18C_Hornet (yasim )</description>
-  <author>Mathias Froehlich, StuartC</author>
+  <description>F/A-18C_Hornet</description>
+  <author>Mathias Froehlich, StuartC, SammySkycrafts</author>
   <status>1.1</status>
 
-  <flight-model>yasim</flight-model>
-  <aero>F-18-yasim</aero>  <!-- For FG Versions earlier than 3.2, remove this line -->
-   <!--  <aero>F-18old-yasim</aero> -->  <!-- for FG versions earlier than 3.2, un comment this line to use the original FDM -->
-<fuel-fraction>1.0</fuel-fraction>
+  <flight-model>jsb</flight-model>
+  <aero>f18</aero>  <!-- For FG Versions earlier than 3.2, remove this line -->
 <rating>
-<FDM type="int">4</FDM>
-<systems type="int">3</systems>
-<cockpit type="int">3</cockpit>
-<model type="int">3</model>
+<FDM type="int">1</FDM>
+<systems type="int">1</systems>
+<cockpit type="int">1</cockpit>
+<model type="int">1</model>
 </rating>
 
 
@@ -938,7 +936,7 @@
 </aar>
 
  <engines>
-   <file>Aircraft/F-18C/Nasal/generic-yasim-engine.nas</file>
+   <file>Aircraft/F-18C/Systems/F404-GE-402.xml</file>
   </engines>
 
   <emu>

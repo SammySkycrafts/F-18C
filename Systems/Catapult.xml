@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<system name="Catapult">
+  <property value="0">systems/catapult/cat-pos-norm</property>
+  <property value="0">systems/catapult/cat-launch-cmd</property>
+  <property value="0">systems/catapult/cat-force</property>
+
+  <channel name="Catapult">
+    <switch name="Catapult Command">
+      <default value="0"/>
+      <test logic="AND" value="0">
+          systems/catapult/cat-pos-norm gt 0.999
+      </test>
+      <test logic="AND" value="1">
+          systems/catapult/cat-launch-cmd == 1
+      </test>
+      <output>systems/catapult/cat-launch-cmd</output>
+    </switch>
+
+   <kinematic name="Catapult Timer">
+     <input>systems/catapult/cat-launch-cmd</input>
+     <traverse>
+       <setting>
+          <position> 0 </position>
+          <time>     0 </time>
+       </setting>
+       <setting>
+          <position> 1 </position>
+          <time>     2.7 </time>
+       </setting>
+     </traverse>
+     <output>systems/catapult/cat-pos-norm</output>
+   </kinematic>
+
+   <pure_gain name="Catapult Force">
+     <input>inertia/weight-lbs</input>
+     <gain>3</gain>
+     <output>systems/catapult/cat-force</output>
+   </pure_gain>
+
+   <switch name="Catapult Final">
+     <default value="0"/>
+     <test logic="AND" value="systems/catapult/cat-force">
+         systems/catapult/cat-launch-cmd == 1
+         systems/catapult/cat-pos-norm lt 0.999
+         systems/catapult/cat-pos-norm gt 0.0
+         gear/unit[0]/WOW ne 0
+     </test>
+     <output>external_reactions/catapult/magnitude</output>
+   </switch>
+  </channel>
+
+</system>
