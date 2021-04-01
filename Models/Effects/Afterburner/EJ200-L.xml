@@ -22,9 +22,11 @@
    <object-name>ReheatOuter</object-name>
    <object-name>ExternalFlame</object-name>
    <condition>
-     <property>engines/engine/augmentation</property>
-     <value>true</value>
-	</condition>
+    <greater-than>
+	 <property>sim/multiplay/generic/float[8]</property>
+	 <value>0.4</value>
+	</greater-than>
+   </condition>
  </animation>
 
  <animation>

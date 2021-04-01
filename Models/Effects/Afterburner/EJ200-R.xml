@@ -3,9 +3,9 @@
 <PropertyList>
 
  <path>EJ200.ac</path>
-
-
-
+ 
+ 
+ 
   <effect>
    <inherits-from>Effects/model-transparent</inherits-from>
    <condition>
@@ -13,19 +13,21 @@
    </condition>
    <object-name>ReheatInner</object-name>
    <object-name>ReheatOuter</object-name>
-   <object-name>ExternalFlame</object-name>
+   <object-name>ExternalFlame</object-name>   
   </effect>
-
+ 
 <animation>
    <type>select</type>
    <object-name>ReheatInner</object-name>
    <object-name>ReheatOuter</object-name>
    <condition>
-     <property>engines/engine[1]/augmentation</property>
-     <value>true</value>
-	</condition>
+    <greater-than>
+	 <property>sim/multiplay/generic/float[9]</property>
+	 <value>0.1</value>
+	</greater-than>
+   </condition>
  </animation>
-
+ 
  <animation>
   <type>blend</type>
   <object-name>ExternalFlame</object-name>
@@ -35,7 +37,7 @@
   <min>0.0</min>
   <max>1.0</max>
  </animation>
-
+ 
   <animation>
    <type>select</type>
    <object-name>ExternalFlame</object-name>
@@ -46,7 +48,7 @@
 	</greater-than>
    </condition>
  </animation>
-
+ 
  <animation>
   <type>scale</type>
   <object-name>ExternalFlame</object-name>
@@ -59,7 +61,7 @@
   <y-factor>0.1</y-factor>
   <z-factor>0.1</z-factor>
  </animation>
-
+ 
   <animation>
   <object-name>ExternalFlame</object-name>
   <type>spin</type>
@@ -76,7 +78,7 @@
    <z>0</z>
   </axis>
  </animation>
-
+ 
  <animation>
   <object-name>ReheatOuter</object-name>
   <object-name>ReheatInner</object-name>
@@ -94,7 +96,7 @@
    <z>0</z>
   </axis>
  </animation>
-
+ 
  <animation>
    <type>material</type>
    <object-name>ReheatOuter</object-name>
@@ -105,7 +107,7 @@
 	<factor-prop>sim/multiplay/generic/float[9]</factor-prop>
    </emission>
  </animation>
-
+ 
  <animation>
    <type>material</type>
    <object-name>ReheatInner</object-name>
