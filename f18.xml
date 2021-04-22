@@ -719,9 +719,9 @@
 
   <force name="hook" frame="BODY">
    <location unit="FT">
-    <x> 50.96 </x>
+    <x> 23.601 </x>
     <y> 0 </y>
-    <z> -1.12</z>
+    <z> -1.1334</z>
    </location>
    <direction>
     <x>-0.9995</x>
