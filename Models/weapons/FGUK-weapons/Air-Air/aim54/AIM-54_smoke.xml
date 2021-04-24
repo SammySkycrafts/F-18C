@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>Aircraft/Mirage-2000/Missiles/AIM-54/aim-54.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>aim-54-6</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>aim-54-6</object-name>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+  </effect>
+
+  <model>
+    <path>Aircraft/Mirage-2000/Missiles/AIM-54/smoke.xml</path>
+    <offsets>
+      <x-m> 3 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

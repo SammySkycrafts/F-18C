@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!-- Russion GP bomb - 1100 lb -->
+
+	<path>FAB-500.ac</path>
+	
+	 <animation>
+    <object-name>FAB-500</object-name>
+  </animation>
+
+
+</PropertyList>

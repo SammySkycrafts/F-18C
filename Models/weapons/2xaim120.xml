@@ -12,11 +12,11 @@
 
     </offsets>
   </model>
-  
-  
+
+
  <model>
   <name>left-aim-120</name>
-    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <path>Aircraft/F-18C/Models/weapons/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
     <offsets>
       <x-m>0.0</x-m>
       <y-m>-0.42</y-m>
@@ -27,7 +27,7 @@
 
    <model>
   <name>right-aim-120</name>
-    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <path>Aircraft/F-18C/Models/weapons/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
     <offsets>
      <x-m>0.0</x-m>
       <y-m>0.42</y-m>

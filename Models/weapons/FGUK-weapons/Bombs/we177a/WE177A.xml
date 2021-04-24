@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!--
+WE.177A weighed 272 kg (600 lb), and had a variable yield of 10 kt or 0.5 kt. 
+It was known to the Armed Services as "Bomb, Aircraft, HE 600lb MC".[6] "MC" (Medium Capacity) referred to a nuclear weapon in the kiloton range. The suffix HC (High Capacity) referred to a weapon in the megaton range, although there were some anomalies.
+
+Variant WE.177A
+Weight 282 kg
+Est. Yield  ½ or 10 kt
+Operational  1969–1992
+Est. Numbers  107 
+
+-->
+
+	<path>WE177A.ac</path>
+	<animation>
+    <object-name>WE-177A</object-name>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+</PropertyList>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Specifications 
+Weight 185 kg (407 lb)
+Length 3.65 m (12 ft 0 in)
+Diameter 0.178 m (7.0 in) 
+
+
+ 
+Warhead High explosive blast-fragmentation 
+Detonation
+mechanism Proximity/impact 
+
+
+ 
+Engine Throttleable ducted rocket
+ 
+Operational range 100+ km (60+ mi) 
+Speed over Mach 4 
+Guidance system Inertial mid-course with datalinked updates, active radar 
+Launch platform :-
+Eurofighter Typhoon
+Dassault Rafale
+Saab JAS 39 Gripen 
+-->
+
+  <path>meteor.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>meteor</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
+
