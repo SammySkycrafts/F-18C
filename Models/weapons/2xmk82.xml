@@ -12,10 +12,10 @@
 
     </offsets>
   </model>
-  
+
   <model>
   <name>left-mk82</name>
-    <path>Aircraft/FGUK-weapons/Bombs/mk82/MK-82-LD.xml</path>
+    <path>Aircraft/F-18C/Models/weapons/FGUK-weapons/Bombs/mk82/MK-82-LD.xml</path>
     <offsets>
       <x-m>0.2</x-m>
       <y-m>-0.42</y-m>
@@ -23,10 +23,10 @@
 
     </offsets>
   </model>
-  
+
    <model>
   <name>right-mk82</name>
-    <path>Aircraft/FGUK-weapons/Bombs/mk82/MK-82-LD.xml</path>
+    <path>Aircraft/F-18C/Models/weapons/FGUK-weapons/Bombs/mk82/MK-82-LD.xml</path>
     <offsets>
       <x-m>0.2</x-m>
       <y-m>0.42</y-m>

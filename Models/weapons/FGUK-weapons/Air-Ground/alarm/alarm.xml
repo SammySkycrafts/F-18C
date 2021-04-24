@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Type Air-to-surface anti-radar missile 
+Service history 
+In service 1990 
+Used by See operators 
+Wars Gulf War, Iraq War 
+Production history 
+Designer BAe Dynamics 
+Designed 1982 
+Manufacturer BAe Dynamics (1982-1999)
+MBDA (UK) Ltd (since 1999) 
+Unit cost undisclosed 
+Produced 1986-Present 
+Specifications 
+Weight 268 kilograms (590 lb) 
+Length 4.24 metres (13.9 ft) 
+Diameter 230 millimetres (9.1 in) 
+
+Warhead Proximity fused high-explosive 
+Detonation
+mechanism Laser Proximity 
+ 
+Engine Bayern Chemie two stage solid propellant rocket motors
+ 
+Wingspan 0.73 metres (2.4 ft) 
+Propellant solid-propellant 
+Operational range 93 kilometres (58 mi) 
+Speed 2,455 kilometres per hour (1,525 mph) (supersonic) 
+Guidance system Pre-programmed/passive radar seeker 
+Launchplatform 
+Tornado GR.4, 
+Tornado F3 
+-->
+
+  <path>baeAlarm.ac</path>
+
+  <animation>
+    <object-name>Alarm</object-name>
+	  <attach>world</attach>
+
+ 
+  </animation>
+
+</PropertyList>

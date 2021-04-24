@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!--  AGM-12 Bullpup.  
+Weight 1,785 pounds (810 kg) (AGM-12C) 
+Length 13.6 feet (4.1 m) 
+Diameter 18 inches (460 mm) 
+
+Variants ASM-N-7, ASM-N-7A/AGM-12B, AGM-12C, GAM-83B/AGM-12D, AGM-12E 
+-->
+
+  <path>agm12.ac</path>
+
+  <animation>
+    <object-name>agm12</object-name>
+  </animation>
+
+</PropertyList>

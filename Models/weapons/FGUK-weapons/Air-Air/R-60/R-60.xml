@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!--  
+Type Short-range Air to Air Missile 
+Place of origin Soviet Union 
+Service history :- In service 1974- present 
+
+Manufacturer Vympel 
+
+Specifications 
+Weight 43.5 kg (96 lb) 
+Length 2090 mm (6 ft 10 in) 
+Diameter 120 mm (4¾ in) 
+ 
+Warhead 3 kg (6.6 lb) 
+Detonation mechanism proximity 
+
+Engine solid-fuel rocket engine
+ 
+Wingspan 390 mm (15¼ in) 
+Operational
+range 8 km (5 mi) 
+Flight altitude 20,000 m (65,615 ft) 
+Speed Mach 2.7 
+Guidance
+system infrared homing
+Launch platform :-
+MiG-21, 
+MiG-23, 
+MiG-25, 
+MiG-27, 
+MiG-29, 
+MiG-31, 
+Su-15, 
+Su-17, 
+Su-20, 
+Su-22, 
+Su-24, 
+Su-25, 
+Yak-28, 
+Yak-38, 
+Yak-141, 
+Mi-24, 
+BAE Hawk 
+ -->
+
+
+
+	<path>R-60.ac</path>
+	
+	
+	
+	
+  <animation>
+    <object-name>R-60</object-name>
+  </animation>
+	
+	
+
+</PropertyList>

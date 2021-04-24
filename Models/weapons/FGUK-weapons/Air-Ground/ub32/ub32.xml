@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!-- Russion 
+UB-32 
+rockets: 32
+length x diameter: 2080 x 481 mm
+weight, empty: 103 kg
+weight, loaded: 264 kg
+aircraft: 
+MiG-21, 
+MiG-23, 
+MiG-27, 
+Su-7, 
+Su-17/20/22, 
+Su-25, 
+Mi-17, 
+Mi-24
+ -->
+
+	<path>UB-32.ac</path>
+	
+	 <animation>
+    <object-name>UB-32</object-name>
+  </animation>
+
+
+</PropertyList>

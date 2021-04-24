@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!--
+WE.177B weighed 457 kg (1007.5 lb), with a fixed yield of 450 kt. 
+Although it weighed in excess of 1000 lb it was known in RAF Service as the "Bomb, Aircraft, HE 950lb MC"[6] to differentiate it from the conventional "Bomb, Aircraft, 1000 lb GP HE", which gave rise to its popular name "950". WE.177B had airburst, impact, or laydown options.
+
+Variant WE.177B
+Weight 457 kg
+Est. Yield 450 kt
+Operational 1966–1995
+Est. Numbers  53 
+
+
+-->
+
+	<path>WE177B.ac</path>
+	<animation>
+    <object-name>WE177B</object-name>
+    </animation>
+	
+</PropertyList>
