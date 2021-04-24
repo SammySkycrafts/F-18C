@@ -123,8 +123,16 @@
            <dialog-name>track_target</dialog-name>
         </binding>
       </item> 
-    </menu>
-  
+
+    <item n="15">
+        <label>MP damage log</label>
+        <name>track_target</name>
+        <binding>
+            <command>dialog-show</command>
+            <dialog-name>flightlog</dialog-name>
+        </binding>
+    </item> 
+</menu>
          
 </default>
 

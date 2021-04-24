@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<!--
+    See: http://wiki.flightgear.org/JSBSim_Thrusters#FGDirect
+
+    Thrust is computed directly by the engine
+-->
+
+<direct name="Direct">
+</direct>

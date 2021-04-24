@@ -486,7 +486,7 @@ if(navStillOn) {
   <object-name>RightOutboard</object-name>
   <object-name>RightBigWingBit</object-name>
   <object-name>RightOuterWing</object-name>
- <object-name>right-aim9-pos-1</object-name>
+  <object-name>right-aim9-pos-1</object-name>
 </animation>
 
 <animation>
