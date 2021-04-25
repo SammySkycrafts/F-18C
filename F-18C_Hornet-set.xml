@@ -640,12 +640,12 @@
       <line>If all 3 drop tanks are selected, the Centre tank will feed first then the wing droptanks will activate.</line>
      <line></line>
 	  <line>Using pre selected loadout options</line>
-	   <line>A few pre defined loadout options are available in the F-18D Menu for you to use.</line>
+	   <line>A few pre defined loadout options are available in the F-18C Menu for you to use.</line>
 	    <line>Selecting any will add the appropriate weapons and tanks to the aircraft.</line>
 		 <line>Due a small bug in the system you still need to manually reselect any 1 item from the Equipment menu to have the correct payload weight calculated..</line>
 		  <line></line>
 		   <line>Cannon.</line>
-		    <line>The cannon carries 520 rounds of ammo only. This can only be reloaded on the ground from the F-18D Menu.</line>
+		    <line>The cannon carries 520 rounds of ammo only. This can only be reloaded on the ground from the F-18C Menu.</line>
     </help>
 
 
@@ -886,16 +886,16 @@
 <file>Aircraft/F-18C/Nasal/doors.nas</file>
 </doors>
 
-<F-18D>
+<F-18C>
 
 <file>Aircraft/F-18C/Nasal/doors.nas</file>
 <file>Aircraft/F-18C/Nasal/fuelhose.nas</file>
 <file>Aircraft/F-18C/Nasal/liveries.nas</file>
 
-</F-18D>
-<F-18D_fuel>
+</F-18C>
+<F-18C_fuel>
    <file>Aircraft/F-18C/Nasal/fuel.nas</file>
-  </F-18D_fuel>
+</F-18C_fuel>
 <radar>
 <file>Aircraft/F-18C/Nasal/radar.nas</file>
     </radar>
