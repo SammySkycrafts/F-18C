@@ -7,18 +7,18 @@
 
 <!-- left exhaust -->
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -26,9 +26,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -36,9 +36,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -46,9 +46,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -56,9 +56,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -66,9 +66,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -76,9 +76,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -86,9 +86,9 @@
   </offsets>
 </model>
 
-<model> 
-  <path>Aircraft/F-18D/Models/Effects/nozzles/NozzleL.xml</path>
-  <offsets> 
+<model>
+  <path>Aircraft/F-18C/Models/Effects/nozzles/NozzleL.xml</path>
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>-0.957</y-m>
     <z-m>-0.176</z-m>
@@ -99,18 +99,18 @@
 
 <!-- right exhaust
 
-<model> 
+<model>
   <path>Aircraft/eurofighter/Models/Effects/nozzles/NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -118,9 +118,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -128,9 +128,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -138,9 +138,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -148,9 +148,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -158,9 +158,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -168,9 +168,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
@@ -178,9 +178,9 @@
   </offsets>
 </model>
 
-<model> 
+<model>
   <path>Aircraft/Mig-29/Models/Mig-29_NozzleR.xml</path>
-  <offsets> 
+  <offsets>
     <x-m>13.847</x-m>
     <y-m>0.957</y-m>
     <z-m>-0.176</z-m>
