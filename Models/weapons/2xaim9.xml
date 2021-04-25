@@ -15,7 +15,7 @@
 
   <model>
   <name>left-aim-9</name>
-    <path>AircraftF-18C/Models/weapons/FGUK-weapons/Air-Air/aim9/AIM-9.xml</path>
+    <path>Aircraft/F-18C/Models/weapons/FGUK-weapons/Air-Air/aim9/AIM-9.xml</path>
     <offsets>
       <x-m>0.0</x-m>
       <y-m>-0.42</y-m>
@@ -26,7 +26,7 @@
 
    <model>
   <name>right-aim-9</name>
-    <path>AircraftF-18C/Models/weapons/FGUK-weapons/Air-Air/aim9/AIM-9.xml</path>
+    <path>Aircraft/F-18C/Models/weapons/FGUK-weapons/Air-Air/aim9/AIM-9.xml</path>
     <offsets>
      <x-m>0.0</x-m>
       <y-m>0.42</y-m>
