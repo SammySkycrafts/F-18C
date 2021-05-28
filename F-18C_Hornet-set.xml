@@ -920,11 +920,6 @@
 		   <file>Aircraft/F-18C/Nasal/lights.nas</file>
 		</lights>
 
-<terrain-map>
-
-<file>Aircraft/F-18C/Nasal/terrain-map.nas</file>
-
-</terrain-map>
 
 <low>
 <file>Aircraft/F-18C/Nasal/low.nas</file>
@@ -936,7 +931,7 @@
 </aar>
 
  <engines>
-   <file>Aircraft/F-18C/Systems/F404-GE-402.xml</file>
+   <file>Aircraft/F-18C/Engines/F404-GE-402.xml</file>
   </engines>
 
   <emu>
