@@ -608,6 +608,7 @@
         <armament>
             <models>Aircraft/F-18C/Models/Armament/</models>
             <MLW-count>0</MLW-count>
+            <msg type="bool">false</msg>
         </armament>
         <d-config>
             <full_damage_dist_m type="double">3</full_damage_dist_m>
