@@ -15,10 +15,10 @@
       </item>
 	  
  <item n="1">
-        <label>MP Shot Report</label>
+        <label>Toggle MP damage</label>
         <binding>
-          <command>nasal</command>
-          <script>missile.MPReport()</script>
+          <command>property-toggle</command>
+          <property>/payload/armament/msg</property>
         </binding>
       </item>
       <item n="2">
