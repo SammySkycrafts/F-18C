@@ -870,9 +870,11 @@
             <file>Aircraft/F-18C/Nasal/ext_stores.nas</file>
         </load>
         <missile>
-            <file>Aircraft/F-18C/Nasal/missile.nas</file>
             <file>Aircraft/F-18C/Nasal/Loading_Missiles.nas</file>
         </missile>
+        <armament>
+            <file>Aircraft/F-18C/Nasal/missile.nas</file>
+        </armament>
         <notifications>
             <file>Aircraft/F-18C/Nasal/ArmamentNotification.nas</file>
             <file>Aircraft/F-18C/Nasal/GeoBridgedTransmitter.nas</file>
@@ -880,5 +882,8 @@
         <damage>
             <file>Aircraft/F-18C/Nasal/damage.nas</file>
         </damage>
+        <vector>
+            <file>Aircraft/F-18C/Nasal/vector.nas</file>
+        </vector>
     </nasal>
 </PropertyList>
