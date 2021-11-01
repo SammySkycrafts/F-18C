@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+ Type Glide bomb 
+Production history 
+Manufacturer Raytheon 
+Unit cost AUPP AGM-154A: $282,000
+AGM-154B: $484,167
+AGM-154C: $719,012 
+Specifications 
+Weight 1,065 lb (483 kg) to 1,095 pounds (497 kg) 
+Length 160 in (4,100 mm) 
+Diameter 13 in (330 mm) 
+Warhead BLU-97/B - Combined Effects Bomblets (JSOW A)
+BLU-108 - Sensor fused weapon (JSOW B - now cancelled)
+BROACH multi-stage warhead (JSOW C) 
+Wingspan 106 in (270 cm) 
+Operational range low altitude launch: 12 nautical miles (22 km; 14 mi)
+high altitude launch: 70 nautical miles (130 km; 81 mi )
+
+-->
+
+
+
+  <path>agm154.ac</path>
+
+  <animation>
+    <object-name>agm154</object-name>
+  </animation>
+
+</PropertyList>

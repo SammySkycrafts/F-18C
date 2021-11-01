@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Type Hard target laser-guided weapon 
+Place of origin  United States 
+Service history 
+In service 1991 to present 
+Used by United States, Israel 
+Production history 
+Designer Defense Systems and Electronics Group (Texas Instruments) 
+Manufacturer Raytheon 
+Specifications 
+Length 7.6 metres (25 ft) 
+Diameter 35.6 centimetres (14.0 in) 
+Wingspan 1.7 metres (5.6 ft) 
+Operational range More than 9 kilometres (4.9 nmi) 
+Launchplatform 
+
+B-2 Spirit
+F-15E Strike Eagle
+F-111 Aardvark
+ 
+-->
+
+  <path>gbu28.ac</path>
+
+  <animation>
+    <object-name>gbu28</object-name>
+  </animation>
+
+</PropertyList>

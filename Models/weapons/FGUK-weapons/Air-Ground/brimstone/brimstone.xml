@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!--  Type Air-to ground missile 
+Place of origin United Kingdom 
+Service history 
+In service 2005 
+Used by RAF, RSAF 
+Wars Operation Telic (Iraq)
+Operation Herrick (Afghanistan)
+Operation Ellamy (Libya) 
+Production history 
+Designer GEC-Marconi 
+Designed 1996 
+Manufacturer MBDA (UK) Ltd, Lostock 
+Unit cost (Dual Mode Variant)
+£105,000/unit[1]
+£175,000 inc development[2] 
+Produced 1999 
+Specifications 
+Weight 48.5 kg 
+Length 1.8 m 
+Diameter 17.8 cm 
+
+ 
+Warhead HEAT tandem warhead Detonation 
+mechanism Crush fuze 
+
+ 
+Engine Solid fuel rocket
+ 
+Operationalrange 12 kilometres (7.5 mi) 
+Speed Supersonic 
+Guidance system 94 GHz millimetric wave radar and INS autopilot, dual-mode adds laser guidance 
+Steering system Aerodynamic surfaces 
+Launch platform 
+Tornado GR4
+Typhoon (planned) 
+
+-->
+
+  <path>brimstone.ac</path>
+
+  <animation>
+    <object-name>Brimstone</object-name>
+  </animation>
+
+</PropertyList>

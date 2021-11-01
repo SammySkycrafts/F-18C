@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Variants Sparrow I: AIM-7A
+Sparrow II: AIM-7B
+Sparrow III: AIM-7C, AIM-7D, AIM-7E, AIM-7E2/Skyflash/Aspide, AIM-7F, AIM-7M, AIM-7P, RIM-7M 
+
+Weight 510 lb (230 kg) 
+Length 12 ft (3.7 m) 
+Diameter 8 in (200 mm) 
+
+Launch
+platform Aircraft: 
+McDonnell Douglas F-4 Phantom II 
+McDonnell Douglas F-15 Eagle 
+General Dynamics F-16 Fighting Falcon 
+Grumman F-14 Tomcat 
+F/A-18 Hornet 
+JA-37 Viggen 
+F-104S Starfighter 
+Tornado F.3 ADV 
+F/A-18E/F Super Hornet 
+Mitsubishi F-2 
+ -->
+
+  <path>aim-7.ac</path>
+
+  <animation>
+     <object-name>AIM-120C5</object-name>
+  </animation>
+
+</PropertyList>
