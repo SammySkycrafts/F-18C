@@ -13,7 +13,7 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
-	  
+
  <item n="1">
         <label>Toggle MP damage</label>
         <binding>
@@ -42,7 +42,7 @@
           <script>load.Ferry()</script>
         </binding>
       </item>
-	  
+
       <item n="5">
         <label>CAP</label>
         <binding>
@@ -50,7 +50,7 @@
           <script>load.CAP()</script>
         </binding>
       </item>
-	  
+
       <item n="6">
         <label>CAP Extended loiter</label>
         <binding>
@@ -58,7 +58,7 @@
           <script>load.CAPext()</script>
         </binding>
       </item>
-	  
+
 	   <item n="7">
         <label>Bomb run</label>
         <binding>
@@ -66,7 +66,7 @@
           <script>load.bomb()</script>
         </binding>
       </item>
-     
+
 	 <item n="8">
         <label>Bomb run extender range</label>
         <binding>
@@ -74,7 +74,7 @@
           <script>load.bombext()</script>
         </binding>
       </item>
-	  
+
 	   <item n="9">
         <label>LGB</label>
         <binding>
@@ -82,7 +82,7 @@
           <script>load.lgb()</script>
         </binding>
       </item>
-	  
+
 	   <item n="10">
         <label>Air-Ground missile</label>
         <binding>
@@ -90,7 +90,7 @@
           <script>load.agm()</script>
         </binding>
       </item>
-	  
+
 	   <item n="11">
         <label>Cruse missile</label>
         <binding>
@@ -98,7 +98,7 @@
           <script>load.cruse()</script>
         </binding>
       </item>
-	  
+
 	   <item n="12">
         <label>Anti Ship</label>
         <binding>
@@ -106,7 +106,7 @@
           <script>load.ship()</script>
         </binding>
       </item>
-	  
+
 	   <item n="13">
         <label>Anti radiation</label>
         <binding>
@@ -114,7 +114,7 @@
           <script>load.radar()</script>
         </binding>
       </item>
-     
+
       <item n="14">
         <label>Target Tracking</label>
         <name>track_target</name>
@@ -122,7 +122,7 @@
            <command>dialog-show</command>
            <dialog-name>track_target</dialog-name>
         </binding>
-      </item> 
+      </item>
 
     <item n="15">
         <label>MP damage log</label>
@@ -131,10 +131,54 @@
             <command>dialog-show</command>
             <dialog-name>flightlog</dialog-name>
         </binding>
-    </item> 
+    </item>
 </menu>
-         
+<menu n="101">
+    <label>FDM Tuning</label>
+    <item>
+        <label>Tune Drag</label>
+        <binding>
+            <command>nasal</command>
+            <script>dialog.tuner_drag_dialog.open()</script>
+        </binding>
+    </item>
+    <item>
+        <label>Tune Lift</label>
+        <binding>
+            <command>nasal</command>
+            <script>dialog.tuner_lift_dialog.open()</script>
+        </binding>
+    </item>
+    <item>
+        <label>Tune Pitch</label>
+        <binding>
+            <command>nasal</command>
+            <script>dialog.tuner_pitch_dialog.open()</script>
+        </binding>
+    </item>
+    <item>
+        <label>Tune Roll</label>
+        <binding>
+            <command>nasal</command>
+            <script>dialog.tuner_roll_dialog.open()</script>
+        </binding>
+    </item>
+    <item>
+        <label>Tune Side</label>
+        <binding>
+            <command>nasal</command>
+            <script>dialog.tuner_side_dialog.open()</script>
+        </binding>
+    </item>
+    <item>
+        <label>Tune Yaw</label>
+        <binding>
+            <command>nasal</command>
+            <script>dialog.tuner_yaw_dialog.open()</script>
+        </binding>
+    </item>
+</menu>
+
 </default>
 
 </PropertyList>
-

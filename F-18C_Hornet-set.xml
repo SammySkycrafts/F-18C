@@ -592,6 +592,66 @@
         </help>
         <menubar include="Dialogs/F15-menu.xml" />
     </sim>
+    <fdm>
+		<jsbsim>
+			<fcs>
+				<nozzle-cmd-norm type="double">0</nozzle-cmd-norm>
+			</fcs>
+			<!-- for in-flight FDM tuning -->
+			<tune>
+				<lift>
+					<alpha type="double">1</alpha>
+					<pitch_rate type="double">1</pitch_rate>
+					<alpha_rate type="double">1</alpha_rate>
+					<elevator type="double">1</elevator>
+					<flap type="double">1</flap>
+					<mach type="double">1</mach>
+					<mach-alpha type="double">1</mach-alpha>
+				</lift>
+				<drag>
+					<minimum type="double">1</minimum>
+					<alpha type="double">1</alpha>
+					<induced type="double">1</induced>
+					<mach type="double">1</mach>
+					<beta type="double">1</beta>
+					<elevator type="double">1</elevator>
+					<gear type="double">1</gear>
+					<flap type="double">1</flap>
+					<speedbrake type="double">1</speedbrake>
+					<mach-alpha type="double">1</mach-alpha>
+				</drag>
+				<side>
+					<beta type="double">1</beta>
+					<roll_rate type="double">1</roll_rate>
+					<yaw_rate type="double">1</yaw_rate>
+					<rudder type="double">1</rudder>
+				</side>
+				<pitch>
+					<alpha type="double">1</alpha>
+					<elevator type="double">1</elevator>
+					<damp type="double">1</damp>
+					<alphadot type="double">1</alphadot>
+					<mach type="double">1</mach>
+					<mach-alpha type="double">1</mach-alpha>
+				</pitch>
+				<roll>
+					<beta type="double">1</beta>
+					<damp type="double">1</damp>
+					<yaw type="double">1</yaw>
+					<aileron type="double">1</aileron>
+					<rudder type="double">1</rudder>
+				</roll>
+				<yaw>
+					<alpha type="double">1</alpha>
+					<beta type="double">1</beta>
+					<roll_rate type="double">1</roll_rate>
+					<damp type="double">1</damp>
+					<rudder type="double">1</rudder>
+					<aileron type="double">1</aileron>
+				</yaw>
+			</tune>
+		</jsbsim>
+	</fdm>
     <systems>
         <electrical>
             <path>Aircraft/Generic/generic-electrical.xml</path>
@@ -818,6 +878,9 @@
         <doors>
             <file>Aircraft/F-18C/Nasal/doors.nas</file>
         </doors>
+        <dialog>
+            <file>Aircraft/F-18C/Nasal/dialogs.nas</file>
+        </dialog>
         <F-18D>
             <file>Aircraft/F-18C/Nasal/doors.nas</file>
             <file>Aircraft/F-18C/Nasal/fuelhose.nas</file>
