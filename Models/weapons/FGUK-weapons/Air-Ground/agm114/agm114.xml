@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!-- Type Air-to-surface and surface-to-surface missile 
+Place of origin United States 
+Service history 
+In service 1984–present 
+Production history 
+Manufacturer Lockheed Martin 
+Unit cost US$68,000 
+Produced 1974–present 
+Specifications 
+Weight 100–108lb (45.4–49kg)[1] 
+Length 64 in (163 cm) 
+Diameter 7 in (17.8 cm) 
+
+ 
+Warhead High Explosive Anti-Tank (HEAT); 20 lb (9 kg) tandem anti-armor
+Metal augmented charge (MAC); 18 lb (8 kg) shaped-charge
+Blast Fragmentation 
+
+ 
+Engine Solid-fuel rocket
+ 
+Wingspan 13 in (33 cm) 
+Operational range 546 yd – 5 mi (500 m – 8 km) 
+Speed Mach 1.3 (950 mph; 425 m/s) 
+Guidance system Semi-active laser homing 
+millimeter wave radar seeker 
+Launch platform 
+Rotary- and fixed-wing platforms, 
+Unmanned combat air vehicles, 
+tripods, 
+ships, 
+and ground vehicles 
+
+
+-->
+
+  <path>Hellfire.ac</path>
+
+  <animation>
+    <object-name>AGM-114</object-name>
+  </animation>
+
+</PropertyList>

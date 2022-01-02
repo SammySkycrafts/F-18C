@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Type Fixed target, precision strike, moving vehicle 
+Place of origin United States of America 
+Service history 
+In service 1997-present 
+Production history 
+Unit cost Approx. US$25,000 (Depends on acquisition lot. Foreign sales have considerably higher prices.) 
+Variants See variants 
+Specifications 
+Length 9.9–12.75 feet (3.0–3.89 m) 
+Maximum range Up to 15 nautical miles (28 km) 
+Wingspan 19.6 to 25 inches (500 to 640 mm) 
+Accuracy Specified 13 meters; Realized around 7 meters
+2,000 lb (900 kg) nominal weight 
+
+JDAM is currently compatible with:
+
+A-4 Skyhawk
+AV-8B Harrier II
+A-10 Thunderbolt II
+AMX International AMX
+B-1B Lancer
+B-2A Spirit
+B-52H Stratofortress
+F-15E Strike Eagle
+F-16C Fighting Falcon
+CF-18 Hornet
+F/A-18A+/C/D Hornet
+F/A-18E/F Super Hornet
+F-22 Raptor
+F-35 Lightning II
+MQ-9 Reaper
+Mitsubishi F-2
+Panavia Tornado
+Mirage F-1
+Eurofighter Typhoon
+Saab JAS 39 Gripen
+A-29 Super Tucano[27]
+KAI FA-50
+F-14A/B/D Tomcat – retired
+F-117 Nighthawk – retired
+S-3 Viking – retired
+ 
+
+-->
+
+  <path>gbu31.ac</path>
+
+  <animation>
+    <object-name>gbu31</object-name>
+  </animation>
+
+</PropertyList>

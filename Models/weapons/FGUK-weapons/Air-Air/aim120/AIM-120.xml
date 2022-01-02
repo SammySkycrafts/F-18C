@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!--
+Type Medium-range, active radar homing air-to-air missile 
+Place of origin United States 
+
+Weight 335 pounds (152 kg) 
+Length 12 feet (3.7 m) 
+Diameter 7 inches (180 mm) 
+
+Weight 335 pounds (152 kg) 
+Length 12 feet (3.7 m) 
+Diameter 7 inches (180 mm) 
+-->
+
+	<path>AIM-120.ac</path>
+	
+	<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>12000</max-m>
+    </animation>
+	
+</PropertyList>

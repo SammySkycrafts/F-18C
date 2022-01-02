@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Type air-to-air missile 
+Place of origin United Kingdom 
+
+Weight 136 kg (300 lb) 
+Length 3.19 m (10 ft 5.5 in) 
+Diameter 0.223 m (8.75 in) 
+
+Launch
+platform fixed-wing aircraft 
+-->
+
+  <path>firestreak.ac</path>
+
+  <animation>
+    <object-name>firestreak</object-name>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!--Type Low-Drag General Purpose (LDGP) bomb 
+Place of origin United States 
+Specifications 
+Weight 1014 lb (460 kg) 
+Length 119.49 inches (3000 mm) 
+Diameter 14.06 inches (357 mm) 
+Filling Tritonal, Minol or H6 
+Filling weight 445 lb (202 kg) 
+ -->
+
+<PropertyList>
+
+
+ <path>mk83.ac</path>
+
+ <animation>
+  <enable-hot type="bool">false</enable-hot>
+ </animation>
+
+
+ 
+
+</PropertyList>

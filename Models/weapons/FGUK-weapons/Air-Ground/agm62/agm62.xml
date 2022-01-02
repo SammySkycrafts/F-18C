@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!--  Specifications
+Note: Data given by several sources show slight variations. Figures given below may therefore be inaccurate! Quotes range figures are maximum values for high-altitude launches.
+
+Data for Walleye I MK 1 MOD 0 (AGM-62A) and Walleye II MK 5 MOD 4 (except where noted):
+
+  Walleye I MK 1 MOD 0 Walleye II MK 5 MOD 4 
+Length 3.45 m (136 in) 4.04 m (159 in) 
+Wingspan 1.15 m (45.5 in) 1.30 m (51 in) 
+Diameter 0.318 m (12.5 in) 0.457 m (18 in) 
+Weight 510 kg (1125 lb) 1060 kg (2340 lb) 
+Speed high subsonic 
+Range 30 km (16 nm) 45 km (24 nm)
+Walleye II ERDL MK 23 MOD 0: 60 km (32 nm) 
+Propulsion none 
+Warhead 374 kg (825 lb) MK 58 linear shaped-charge 900 kg (2000 lb) MK 87 linear shaped-charge
+MK 6 MOD 0: W-72 nuclear fission (625 T) 
+
+-->
+
+  <path>agm62.ac</path>
+
+  <animation>
+    <object-name>agm12</object-name>
+  </animation>
+
+</PropertyList>

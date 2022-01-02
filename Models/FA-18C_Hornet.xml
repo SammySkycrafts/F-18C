@@ -1345,47 +1345,78 @@ if(navStillOn) {
 
   <!-- Les flammes -->
 
-  <!--
- <model>
+   	<model>
+  	<name>AB_flameL</name>
 	<path>Aircraft/F-18C/Models/Effects/Afterburner/AfterBurner.xml</path>
 	<offsets>
-	<x-m>  8.0</x-m>
+	<x-m>  7.9</x-m>
 	<y-m>  -0.55</y-m>
-	<z-m> 6.1</z-m>
-	<pitch-deg>90</pitch-deg>
+	<z-m>0</z-m>
 	</offsets>
 	</model>
 
 	<model>
+  	<name>AB_flameR</name>
 	<path>Aircraft/F-18C/Models/Effects/Afterburner/AfterBurner.xml</path>
 	<offsets>
-	<x-m>  8.0</x-m>
+	<x-m>  7.9</x-m>
 	<y-m>  0.55</y-m>
-	<z-m> 6.1</z-m>
-	<pitch-deg>90</pitch-deg>
-	</offsets>
-	</model>
-	-->
-
-	 <model>
-	<path>Aircraft/F-18C/Models/Effects/Afterburner/EJ200-L.xml</path>
-	<offsets>
-	   <x-m>8.5</x-m>
-     <y-m>-0.5</y-m>
-     <z-m>0.07</z-m>
-	<pitch-deg>0</pitch-deg>
+	<z-m>0</z-m>
 	</offsets>
 	</model>
 
-	<model>
-	<path>Aircraft/F-18C/Models/Effects/Afterburner/EJ200-R.xml</path>
-	<offsets>
-	 <x-m>8.5</x-m>
-     <y-m>0.5</y-m>
-     <z-m>0.07</z-m>
-	<pitch-deg>0</pitch-deg>
-	</offsets>
-	</model>
+ <animation>
+    <type>select</type>
+    <object-name>AB_flameL</object-name>
+   <condition>
+    <greater-than>
+	 <property>sim/multiplay/generic/float[8]</property>
+	 <value>0</value>
+	</greater-than>
+   </condition>
+   </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AB_flameR</object-name>
+   <condition>
+    <greater-than>
+	 <property>sim/multiplay/generic/float[9]</property>
+	 <value>0</value>
+	</greater-than>
+   </condition>
+  </animation>
+
+  <animation>
+    <type>scale</type>
+    <object-name>AB_flameL</object-name>
+    <property>sim/multiplay/generic/float[8]</property><!--  -->
+    <x-factor>1.0</x-factor>
+    <x-min>0.3</x-min>
+    <y-min>1.0</y-min>
+    <z-min>1.0</z-min>
+    <center>
+	<x-m>  7.9</x-m>
+	<y-m>  0.55</y-m>
+	<z-m>0</z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>scale</type>
+    <object-name>AB_flameR</object-name>
+    <property>sim/multiplay/generic/float[9]</property><!--  -->
+    <x-factor>1.0</x-factor>
+    <x-min>0.3</x-min>
+    <y-min>1.0</y-min>
+    <z-min>1.0</z-min>
+    <center>
+	<x-m>  7.9</x-m>
+	<y-m>  0.55</y-m>
+	<z-m>0</z-m>
+   </center>
+  </animation>
+
 
   <!-- Gauche -->
   <model>

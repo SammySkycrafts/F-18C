@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Primary Function: 2,000 lb unpowered guided weapon 
+Length: 14 ft 4in (4.34 m) 
+Diameter: 18 in (460 mm) 
+Range: More than 8 nm (14.8 km) 
+-->
+
+  <path>gbu10.ac</path>
+
+  <animation>
+    <object-name>gbu10</object-name>
+  </animation>
+
+</PropertyList>

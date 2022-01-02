@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+<!--  Type tactical air-to-surface missile
+anti-radar missile (Kh-25MP) 
+Place of origin Soviet Union 
+Service history 
+In service 1975-current 
+Used by Russia 
+Production history 
+Designed 1971-1975 
+Manufacturer Zvezda-Strela 
+Specifications 
+Weight Kh-25ML :299 kg (659 lb)[1]
+Kh-25MP :315 kg (694 lb)[2] 
+Length Kh-25ML :370.5 cm (12 ft 2 in)[1]
+Kh-25MP 1VP :425.5 cm (167.5 in)[2]
+Kh-25MP 2VP :435.5 cm (171.5 in)[2] 
+Diameter 27.5 cm (10.8 in)[1] 
+
+ 
+Warhead High explosive, shell-forming 
+Warhead weight Kh-25MP :89.6 kg (198 lb),[2] Kh-25MR :140 kg (309 lb)[3] 
+
+
+ 
+Wingspan 75.5 cm (29.7 in)[1] 
+Operational
+range Kh-25ML :11 km (5.9 nmi)[3]
+Kh-25MP :up to 60 km (32 nmi)[3]
+Kh-25MTP : 20 km (11 nmi)[3] 
+Speed Kh-25ML :1,370–2,410 km/h (850–1,500 mph)[1]
+Kh-25MP :1,080–1,620 km/h (670–1,000 mph)[2] 
+Guidance
+system Laser, passive radar, TV, IIR, satnav, active radar depending on variant 
+Launch
+platform MiG-21,
+MiG-23/27,
+MiG-29,
+Su-17/20/22,
+Su-24,
+Su-25,
+Su-27
+
+Kh-25MP : 
+MiG-23/27,
+Su-17/22,
+Su-24,
+Su-25 
+
+-->
+
+  <path>kh-25.ac</path>
+
+  <animation>
+    <object-name>KH-25</object-name>
+  </animation>
+
+</PropertyList>

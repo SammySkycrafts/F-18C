@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+<!--
+Type Short-range air-to-air missile 
+Place of origin  United Kingdom 
+
+Weight 88 kg 
+Length 2.90 m 
+Diameter 166 mm 
+
+Launch
+platform Aircraft: 
+Royal Air Force: Tornado, Typhoon 
+Royal Australian Air Force: F/A-18 
+ 
+ -->
+
+  <path>aim132.ac</path>
+
+  <animation>
+    <object-name>aim132</object-name>
+  </animation>
+
+</PropertyList>
