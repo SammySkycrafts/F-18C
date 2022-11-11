@@ -136,15 +136,6 @@
       </binding>
      </mod-up>
     </key>
-	
-	<key n="57">
-        <name>9</name>
-    <desc>FuelHose</desc>
-    <binding>
-      <command>nasal</command>
-   <script>F-18D.FuelHose.toggle();</script>
-    </binding>
-  </key> 
   
    <key n="72">
     <name>H</name>
