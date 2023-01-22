@@ -651,7 +651,7 @@
     </help>
 
 
-<menubar include="Dialogs/F15-menu.xml"/>
+<menubar include="Dialogs/F18-menu.xml"/>
 
 </sim>
 
