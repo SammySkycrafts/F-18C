@@ -6,7 +6,7 @@ McDonnell Douglas F/A-18C Hornet for [FlightGear](https://www.flightgear.org/) f
 
 ## Installation
 
-### git clone (Recommended)
+### Git Clone (Recommended)
 
 1. Open Git Bash terminal and cd into the folder directory you would like to install your aircraft onto and make sure the aircraft folder directory is added in FlightGear's Add-ons menu
 2. Type in `git clone https://github.com/SammySkycrafts/F-18C.git`
