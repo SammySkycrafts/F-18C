@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="100">
+      <label>F-18C</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+	  
+ <item n="1">
+        <label>MP Shot Report</label>
+        <binding>
+          <command>nasal</command>
+          <script>missile.MPReport()</script>
+        </binding>
+      </item>
+      <item n="2">
+        <label>Reload Gun</label>
+        <binding>
+          <command>nasal</command>
+          <script>guns.reload_Cannon()</script>
+        </binding>
+      </item>
+      <item n="3">
+        <label>No load</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.clean()</script>
+        </binding>
+      </item>
+	   <item n="4">
+        <label>Ferry configuration</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.Ferry()</script>
+        </binding>
+      </item>
+	  
+      <item n="5">
+        <label>CAP</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.CAP()</script>
+        </binding>
+      </item>
+	  
+      <item n="6">
+        <label>CAP Extended loiter</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.CAPext()</script>
+        </binding>
+      </item>
+	  
+	   <item n="7">
+        <label>Bomb run</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.bomb()</script>
+        </binding>
+      </item>
+     
+	 <item n="8">
+        <label>Bomb run extender range</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.bombext()</script>
+        </binding>
+      </item>
+	  
+	   <item n="9">
+        <label>LGB</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.lgb()</script>
+        </binding>
+      </item>
+	  
+	   <item n="10">
+        <label>Air-Ground missile</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.agm()</script>
+        </binding>
+      </item>
+	  
+	   <item n="11">
+        <label>Cruse missile</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.cruse()</script>
+        </binding>
+      </item>
+	  
+	   <item n="12">
+        <label>Anti Ship</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.ship()</script>
+        </binding>
+      </item>
+	  
+	   <item n="13">
+        <label>Anti radiation</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.radar()</script>
+        </binding>
+      </item>
+     
+      <item n="14">
+        <label>Target Tracking</label>
+        <name>track_target</name>
+        <binding>
+           <command>dialog-show</command>
+           <dialog-name>track_target</dialog-name>
+        </binding>
+      </item> 
+    </menu>
+  
+         
+</default>
+
+</PropertyList>
+
