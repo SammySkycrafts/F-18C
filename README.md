@@ -1,6 +1,6 @@
 # F/A-18C Hornet
 
-**Note**: This aircraft is still in development, many features will not work as expected.
+> **Note**: This aircraft is still in development, many features will not work as expected.
 
 McDonnell Douglas F/A-18C Hornet for [FlightGear](https://www.flightgear.org/) flight simulator
 
