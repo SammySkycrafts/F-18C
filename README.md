@@ -20,6 +20,6 @@ McDonnell Douglas F/A-18C Hornet for [FlightGear](https://www.flightgear.org/) f
 
 ## Useful Links
 
-GitHub Repository: https://github.com/SammySkycrafts/F-18C
+GitHub Repository: <https://github.com/SammySkycrafts/F-18C>
 
-Discord Development Server: https://discord.gg/5w5yAz576r
+Discord Development Server: <https://discord.gg/5w5yAz576r>
