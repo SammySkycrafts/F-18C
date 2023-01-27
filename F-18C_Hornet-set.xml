@@ -22,24 +22,30 @@
 <previews>
   <preview>
     <type>exterior</type>
-    <splash type="bool"></splash>
+    <splash type="bool">true</splash>
     <path>Previews/1.png</path>
   </preview>
   <preview>
     <type>exterior</type>
-    <splash type="bool"></splash>
+    <splash type="bool">true</splash>
     <path>Previews/2.png</path>
   </preview>
   <preview>
     <type>exterior</type>
-    <splash type="bool"></splash>
+    <splash type="bool">true</splash>
     <path>Previews/3.png</path>
   </preview>
   <preview>
     <type>exterior</type>
-    <splash type="bool"></splash>
+    <splash type="bool">true</splash>
     <path>Previews/4.png</path>
   </preview>
+  <preview>
+    <type>exterior</type>
+    <splash type="bool">true</splash>
+    <path>Previews/5.png</path>
+  </preview>
+  
 </previews>
 
   <sound>
