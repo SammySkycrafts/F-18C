@@ -50,6 +50,11 @@
     <splash type="bool">true</splash>
     <path>Previews/6.png</path>
   </preview>
+  <preview>
+    <type>exterior</type>
+    <splash type="bool">true</splash>
+    <path>Previews/6.png</path>
+  </preview>
   
 </previews>
 
