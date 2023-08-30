@@ -16,7 +16,7 @@ McDonnell Douglas F/A-18C Hornet for [FlightGear](https://www.flightgear.org/) f
 
 1. Download the zip file by pressing code -> Download ZIP
 2. Unzip the file into your aircraft folder and make sure the aircraft folder directory is added in FlightGear's Add-ons menu
-3. Remove the "-master" from the aircraft folder name
+3. Rename the unzipped folder to "F-18C"
 
 ## Useful Links
 
