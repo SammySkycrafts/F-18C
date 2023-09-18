@@ -32,8 +32,8 @@
     <object-name>lock-1</object-name>
     <condition>
       <equals>
-        <property>sim/current-view/name</property>
-        <value>Cockpit View</value>
+        <property>sim/current-view/view-number-raw</property>
+        <value>0</value>
       </equals>
       <property>sim/hud/visibility[1]</property>
     </condition>
