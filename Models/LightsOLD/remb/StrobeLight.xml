@@ -9,6 +9,14 @@
     <object-name>Light</object-name>
   </animation>
 
+  <!-- Transparency for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Light</object-name>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+  </effect>
 
   <animation>
     <type>alpha-test</type>
@@ -33,9 +41,9 @@
     <type>material</type>
     <object-name>Light</object-name>
     <emission>
-      <red> 2 </red>
+      <red>   2 </red>
       <green> 2 </green>
-      <blue> 2 </blue>
+      <blue>  2 </blue>
     </emission>
   </animation>
 
@@ -43,18 +51,9 @@
     <type>dist-scale</type>
     <object-name>Light</object-name>
     <interpolation>
-      <entry>
-        <ind> 0 </ind>
-        <dep> 0.25 </dep>
-      </entry>
-      <entry>
-        <ind> 20 </ind>
-        <dep> 0.50 </dep>
-      </entry>
-      <entry>
-        <ind> 1500 </ind>
-        <dep> 5.00 </dep>
-      </entry>
+      <entry><ind>    0 </ind><dep> 0.25 </dep></entry>
+      <entry><ind>   20 </ind><dep> 0.50 </dep></entry>
+      <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
     </interpolation>
   </animation>
 
