@@ -17,11 +17,6 @@
 
       <object-name>ShockWave</object-name>
 
-      <condition>
-         <not>
-            <property>/sim/rendering/rembrandt/enabled</property>
-         </not>
-      </condition>
    </animation>
 
    <animation>

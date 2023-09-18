@@ -8,11 +8,6 @@
   <animation>
     <type>select</type>
     <object-name>whitebeacon</object-name>
-    <condition>
-      <not>
-        <property>/sim/rendering/rembrandt/enabled</property>
-      </not>
-    </condition>
   </animation>
 
 

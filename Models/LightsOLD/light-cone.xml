@@ -10,9 +10,6 @@
     <object-name>NoseGearLandinglight</object-name>
 
     <condition>
-      <not>
-        <property>/sim/rendering/rembrandt/enabled</property>
-      </not>
       <property>sim/multiplay/generic/int[2]</property>
       <equals>
         <property>gear/gear[0]/position-norm</property>

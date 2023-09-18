@@ -42,11 +42,6 @@
     <object-name>Cone</object-name>
     <object-name>Cone-texture</object-name>
     <object-name>Light</object-name>
-    <condition>
-      <not>
-        <property>/sim/rendering/rembrandt/enabled</property>
-      </not>
-    </condition>
   </animation>
 
 </PropertyList>
