@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<PropertyList include="F-15_StrikeEagle-bombableinclude.xml">
+<PropertyList include="F-18_Hornet-bombableinclude.xml">
 
  <path>F-18.ac</path>
 
