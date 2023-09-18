@@ -7,19 +7,16 @@
     <path>Aircraft/F-18C/Models/Lights/Flares/ProbeLight-flash.xml</path>
   </model>
 
-  <model>
-    <name>ProbeLightRemb</name>
-    <path>Aircraft/F-18C/Models/Lights/Rembrandt/ProbeLight-remb.xml</path>
-  </model>
-  
+
   <animation>
     <type>select</type>
     <object-name>ProbeLightFlash</object-name>
-    <object-name>ProbeLightRemb</object-name>
     <condition>
       <and>
         <property>lightpack/probe-light-intensity</property>
-        <not><property>sim/crashed</property></not>
+        <not>
+          <property>sim/crashed</property>
+        </not>
       </and>
     </condition>
   </animation>

@@ -16,7 +16,9 @@
           <sum>
             <max>
               <pow>
-                <cos><property>/sim/time/sun-angle-rad</property></cos>
+                <cos>
+                  <property>/sim/time/sun-angle-rad</property>
+                </cos>
                 <value>0.3</value>
               </pow>
               <value>0</value>
@@ -34,15 +36,17 @@
     <inherits-from>Effects/light-cone</inherits-from>
     <object-name>Cone</object-name>
   </effect>
-  
-    <animation>
+
+  <animation>
     <type>select</type>
     <object-name>Cone</object-name>
     <object-name>Cone-texture</object-name>
     <object-name>Light</object-name>
     <condition>
-      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+      <not>
+        <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
     </condition>
   </animation>
-  
- </PropertyList>
+
+</PropertyList>

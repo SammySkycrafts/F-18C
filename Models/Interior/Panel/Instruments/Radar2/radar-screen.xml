@@ -6,16 +6,6 @@
 
 	<path>radar-screen.ac</path>
 
-         <!--  REMBRANDT support for transparent objects-->
- <effect>
-         <inherits-from>Effects/model-transparent</inherits-from>
-         <condition>
-                <property>sim/rendering/rembrandt/enabled</property>
-         </condition>
-         <object-name>radar-screen</object-name>
-
- </effect>
-
 
 	<animation>
 		<type>select</type>

@@ -28,9 +28,10 @@
     <object-name>Mica</object-name>
     <object-name>ailettes</object-name>
     <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
+      <not>
+        <property>sim/rendering/rembrandt/enabled</property>
+      </not>
     </condition>
   </effect>
 
 </PropertyList>
-

@@ -7,25 +7,22 @@
     <path>Aircraft/F-18C/Models/Lights/Flares/TaxiLight-flash.xml</path>
   </model>
 
-  <model>
-    <name>TaxiLightRemb</name>
-    <path>Aircraft/F-18C/Models/Lights/Rembrandt/TaxiLight-remb.xml</path>
-  </model>
 
   <model>
     <name>TaxiLightCone</name>
     <path>Aircraft/F-18C/Models/Lights/LightCone/TaxiLight-cone.xml</path>
-  </model><!-- uncomment for fake non-rembrandt cones -->
-  
+  </model>
+
   <animation>
     <type>select</type>
     <object-name>TaxiLightFlash</object-name>
-    <object-name>TaxiLightRemb</object-name>
-    <object-name>TaxiLightCone</object-name> <!-- uncomment for fake non-rembrandt cones -->
+    <object-name>TaxiLightCone</object-name>
     <condition>
       <and>
         <property>lightpack/taxi-light-intensity</property>
-        <not><property>sim/crashed</property></not>
+        <not>
+          <property>sim/crashed</property>
+        </not>
       </and>
     </condition>
   </animation>
