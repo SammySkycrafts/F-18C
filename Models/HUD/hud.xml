@@ -32,7 +32,7 @@
     <object-name>lock-1</object-name>
     <condition>
       <equals>
-        <property>sim/current-view/view-number-raw</property>
+        <property>sim/current-view/view-number</property>
         <value>0</value>
       </equals>
       <property>sim/hud/visibility[1]</property>

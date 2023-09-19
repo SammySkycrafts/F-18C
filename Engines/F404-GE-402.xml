@@ -6,14 +6,14 @@
   Inputs:
     name:           F404-GE-402
     type:           turbine
-    thrust:         11735 lb
+    thrust:         11000 lb
     augmented?      yes
     injected?       no
 -->
 
 <turbine_engine name="F404-GE-402">
-  <milthrust> 11735.0 </milthrust>
-  <maxthrust> 17602.5 </maxthrust>
+  <milthrust> 11000.0 </milthrust>
+  <maxthrust> 17700.0 </maxthrust>
   <bypassratio>     0.34 </bypassratio>
   <tsfc>            0.81 </tsfc>
   <atsfc>           1.74 </atsfc>
