@@ -14,7 +14,6 @@
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>aim-54-6</object-name>
-
   </effect>
 
   <model>

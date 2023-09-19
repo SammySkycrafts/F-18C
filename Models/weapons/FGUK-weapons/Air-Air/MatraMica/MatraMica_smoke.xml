@@ -28,7 +28,6 @@
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>Mica</object-name>
     <object-name>ailettes</object-name>
-
   </effect>
 
   <model>
