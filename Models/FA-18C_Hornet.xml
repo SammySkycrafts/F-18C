@@ -1093,11 +1093,11 @@ if(navStillOn) {
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1133,11 +1133,11 @@ if(navStillOn) {
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1175,11 +1175,11 @@ if(navStillOn) {
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
@@ -1215,11 +1215,11 @@ if(navStillOn) {
     <interpolation>
       <entry>
         <ind>0.0</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>0.5</ind>
-        <dep>95.0</dep>
+        <dep>80.0</dep>
       </entry>
       <entry>
         <ind>1.0</ind>
