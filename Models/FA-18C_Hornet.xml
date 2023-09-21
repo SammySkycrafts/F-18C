@@ -1616,8 +1616,8 @@ if(navStillOn) {
     <object-name>AB_flameL</object-name>
     <condition>
       <greater-than>
-        <property>sim/multiplay/generic/float[8]</property>
-        <value>0</value>
+        <property>/controls/engines/engine/throttle</property>
+        <value>0.8</value>
       </greater-than>
     </condition>
   </animation>
@@ -1627,8 +1627,8 @@ if(navStillOn) {
     <object-name>AB_flameR</object-name>
     <condition>
       <greater-than>
-        <property>sim/multiplay/generic/float[9]</property>
-        <value>0</value>
+        <property>/controls/engines/engine/throttle</property>
+        <value>0.8</value>
       </greater-than>
     </condition>
   </animation>
@@ -1636,7 +1636,7 @@ if(navStillOn) {
   <animation>
     <type>scale</type>
     <object-name>AB_flameL</object-name>
-    <property>sim/multiplay/generic/float[8]</property><!--  -->
+    <property>/controls/engines/engine/throttle</property><!--  -->
     <x-factor>1.0</x-factor>
     <x-min>0.3</x-min>
     <y-min>1.0</y-min>
@@ -1651,7 +1651,7 @@ if(navStillOn) {
   <animation>
     <type>scale</type>
     <object-name>AB_flameR</object-name>
-    <property>sim/multiplay/generic/float[9]</property><!--  -->
+    <property>/controls/engines/engine/throttle</property><!--  -->
     <x-factor>1.0</x-factor>
     <x-min>0.3</x-min>
     <y-min>1.0</y-min>
