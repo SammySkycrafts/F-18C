@@ -7,6 +7,13 @@
       <label>F-18C</label>
       <enabled type="bool">true</enabled>
       <item>
+        <label>Autostart</label>
+        <binding>
+          <command>nasal</command>
+          <script>autostart.autostart()</script>
+        </binding>
+      </item>
+      <item n="1">
         <label>Select Livery</label>
         <binding>
           <command>nasal</command>
@@ -14,28 +21,28 @@
         </binding>
       </item>
 
-      <item n="1">
+      <item n="2">
         <label>MP Shot Report</label>
         <binding>
           <command>nasal</command>
           <script>missile.MPReport()</script>
         </binding>
       </item>
-      <item n="2">
+      <item n="3">
         <label>Reload Gun</label>
         <binding>
           <command>nasal</command>
           <script>guns.reload_Cannon()</script>
         </binding>
       </item>
-      <item n="3">
+      <item n="4">
         <label>No load</label>
         <binding>
           <command>nasal</command>
           <script>load.clean()</script>
         </binding>
       </item>
-      <item n="4">
+      <item n="5">
         <label>Ferry configuration</label>
         <binding>
           <command>nasal</command>
@@ -43,7 +50,7 @@
         </binding>
       </item>
 
-      <item n="5">
+      <item n="6">
         <label>CAP</label>
         <binding>
           <command>nasal</command>
@@ -51,7 +58,7 @@
         </binding>
       </item>
 
-      <item n="6">
+      <item n="7">
         <label>CAP Extended loiter</label>
         <binding>
           <command>nasal</command>
@@ -59,7 +66,7 @@
         </binding>
       </item>
 
-      <item n="7">
+      <item n="8">
         <label>Bomb run</label>
         <binding>
           <command>nasal</command>
@@ -67,7 +74,7 @@
         </binding>
       </item>
 
-      <item n="8">
+      <item n="9">
         <label>Bomb run extender range</label>
         <binding>
           <command>nasal</command>
@@ -75,7 +82,7 @@
         </binding>
       </item>
 
-      <item n="9">
+      <item n="10">
         <label>LGB</label>
         <binding>
           <command>nasal</command>
@@ -83,7 +90,7 @@
         </binding>
       </item>
 
-      <item n="10">
+      <item n="11">
         <label>Air-Ground missile</label>
         <binding>
           <command>nasal</command>
@@ -91,7 +98,7 @@
         </binding>
       </item>
 
-      <item n="11">
+      <item n="12">
         <label>Cruse missile</label>
         <binding>
           <command>nasal</command>
@@ -99,7 +106,7 @@
         </binding>
       </item>
 
-      <item n="12">
+      <item n="13">
         <label>Anti Ship</label>
         <binding>
           <command>nasal</command>
@@ -107,7 +114,7 @@
         </binding>
       </item>
 
-      <item n="13">
+      <item n="14">
         <label>Anti radiation</label>
         <binding>
           <command>nasal</command>
@@ -115,7 +122,7 @@
         </binding>
       </item>
 
-      <item n="14">
+      <item n="15">
         <label>Target Tracking</label>
         <name>track_target</name>
         <binding>

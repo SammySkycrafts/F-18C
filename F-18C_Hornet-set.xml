@@ -928,30 +928,35 @@
     </crash>
 
     <F-18C>
-
       <file>Aircraft/F-18C/Nasal/doors.nas</file>
       <file>Aircraft/F-18C/Nasal/fuelhose.nas</file>
       <file>Aircraft/F-18C/Nasal/liveries.nas</file>
-
     </F-18C>
+
     <F-18C_fuel>
       <file>Aircraft/F-18C/Nasal/fuel.nas</file>
     </F-18C_fuel>
+
     <radar>
       <file>Aircraft/F-18C/Nasal/radar.nas</file>
     </radar>
+
     <radar2>
       <file>Aircraft/F-18C/Nasal/radar2.nas</file>
     </radar2>
+
     <rwr>
       <file>Aircraft/F-18C/Models/Interior/Panel/Instruments/Radar/rwr.nas</file>
     </rwr>
+
     <hud>
       <file>Aircraft/F-18C/Nasal/MiscRwr.nas</file>
     </hud>
+
     <radardist>
       <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
     </radardist>
+
     <guns>
       <file>Aircraft/F-18C/Nasal/weapons.nas</file>
       <file>Aircraft/F-18C/Nasal/revi.nas</file>
@@ -961,11 +966,9 @@
       <file>Aircraft/F-18C/Nasal/lights.nas</file>
     </lights>
 
-
     <low>
       <file>Aircraft/F-18C/Nasal/low.nas</file>
     </low>
-
 
     <aar>
       <file>Aircraft/Generic/aar.nas</file>
@@ -978,6 +981,7 @@
     <emu>
       <file>Aircraft/F-18C/Nasal/emu.nas</file>
     </emu>
+
     <lights>
       <file>Aircraft/F-18C/Nasal/Lights.nas</file>
     </lights>
@@ -985,10 +989,15 @@
     <load>
       <file>Aircraft/F-18C/Nasal/ext_stores.nas</file>
     </load>
+
     <missile>
       <file>Aircraft/F-18C/Nasal/missile.nas</file>
       <file>Aircraft/F-18C/Nasal/Loading_Missiles.nas</file>
     </missile>
+    
+    <autostart>
+      <file>Aircraft/F-18C/Nasal/autostart.nas</file>
+    </autostart>
 
   </nasal>
 
