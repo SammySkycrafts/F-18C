@@ -4,7 +4,7 @@
 
 McDonnell Douglas F/A-18C Hornet for [FlightGear](https://www.flightgear.org/) flight simulator
 
-![F-18C Hornet](https://github.com/SammySkycrafts/F-18C/blob/3d/Previews/5.png)
+![F-18C Hornet](Previews/5.png)
 
 ## Installation
 
