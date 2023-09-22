@@ -28,7 +28,7 @@
 
   <key n="100">
     <name>d</name>
-    <desc>Crew door</desc>
+    <desc>Canopy</desc>
     <binding>
       <command>nasal</command>
       <script>doors.doorsystem.crewexport();</script>

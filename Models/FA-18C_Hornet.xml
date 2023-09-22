@@ -1110,7 +1110,7 @@ if(navStillOn) {
       <z-m>-0.55</z-m>
     </center>
     <axis>
-      <x>-1.0</x>
+      <y>-1.0</y>
     </axis>
   </animation>
   <animation>
@@ -1192,7 +1192,7 @@ if(navStillOn) {
       <z-m>-0.55</z-m>
     </center>
     <axis>
-      <x>1.0</x>
+      <y>-1.0</y>
     </axis>
   </animation>
   <animation>
@@ -1235,6 +1235,51 @@ if(navStillOn) {
       <z>1.0</z>
     </axis>
   </animation>
+
+  <!-- Lower Gear Animation -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Hydraulic3</object-name>
+    <object-name>RightLowerArm</object-name>
+    <object-name>RightRearWheel</object-name>
+    <object-name>RightShock1</object-name>
+    <object-name>RightShock1A</object-name>
+    <object-name>RightShock2</object-name>
+    <object-name>RightShock2A</object-name>
+    <property>gear/gear/wow</property>
+    <factor>-60</factor>
+    <offset-deg>60</offset-deg>
+    <center>
+      <x-m>1.65</x-m>
+      <y-m>1.25</y-m>
+      <z-m>-1.25</z-m>
+    </center>
+    <axis>
+      <y>1.0</y>
+    </axis>
+  </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>Hydraulic2</object-name>
+    <object-name>LeftLowerArm</object-name>
+    <object-name>LeftRearWheel</object-name>
+    <object-name>LeftShock1</object-name>
+    <object-name>LeftShock1A</object-name>
+    <object-name>LeftShock2</object-name>
+    <object-name>LeftShock2A</object-name>
+    <property>gear/gear/wow</property>
+    <factor>-60</factor>
+    <offset-deg>60</offset-deg>
+    <center>
+      <x-m>1.65</x-m>
+      <y-m>-1.25</y-m>
+      <z-m>-1.25</z-m>
+    </center>
+    <axis>
+      <y>1.0</y>
+    </axis>
+  </animation>
+  
 
 
   <!-- Nose gear flaps animation -->
@@ -1873,16 +1918,6 @@ if(navStillOn) {
     <!--<object-name>CanopyFrameInside</object-name> -->
     <property>instrumentation/doors/crew/position-norm</property>
     <factor>30</factor>
-    <interpolation>
-      <entry>
-        <ind> 0 </ind>
-        <dep> 0 </dep>
-      </entry>
-      <entry>
-        <ind> 1 </ind>
-        <dep> 30 </dep>
-      </entry>
-    </interpolation>
     <center>
       <x-m> -1.58 </x-m>
       <y-m> 0.000 </y-m>

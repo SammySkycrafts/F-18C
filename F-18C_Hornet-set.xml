@@ -614,54 +614,64 @@
       <title>F-18C</title>
       <key>
         <name>d</name>
-        <desc>Open/Close canopy</desc>
+        <desc>Open/Close Canopy</desc>
       </key>
 
       <key>
         <name>w</name>
-        <desc>Weapon mode select</desc>
+        <desc>Weapon Mode Cycle</desc>
       </key>
+
       <key>
         <name>e</name>
-        <desc>Guns fire</desc>
+        <desc>Guns Fire</desc>
       </key>
+
       <key>
         <name>f</name>
-        <desc>Fold/unfold wings</desc>
+        <desc>Fold/Unfold Wings</desc>
       </key>
+
       <key>
         <name>o/O</name>
         <desc>Arrestor hook</desc>
       </key>
+
       <key>
         <name>l</name>
-        <desc>engage launch bar</desc>
+        <desc>Engage Launch Bar</desc>
       </key>
 
       <key>
         <name>8</name>
-        <desc>Launch flares</desc>
+        <desc>Launch Flares</desc>
       </key>
+
       <key>
         <name>T</name>
         <desc>Toggle RWR</desc>
       </key>
+
       <key>
         <name>t</name>
         <desc>Change Radar Distances (10, 20 50,100,150)</desc>
       </key>
+
       <key>
         <name>R</name>
         <desc>Activate/desactivate targeting the nearest (the target have to be bellow radar range)</desc>
       </key>
+
       <key>
         <name>H</name>
         <desc>Toggle Armements Circles</desc>
       </key>
+
       <key>
         <name>n</name>
         <desc>Next Target</desc>
       </key>
+      
       <key>
         <name>Ctrl-n</name>
         <desc>Previous Target</desc>
@@ -998,7 +1008,6 @@
     <autostart>
       <file>Aircraft/F-18C/Nasal/autostart.nas</file>
     </autostart>
-
   </nasal>
 
 
