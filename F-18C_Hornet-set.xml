@@ -671,7 +671,7 @@
         <name>n</name>
         <desc>Next Target</desc>
       </key>
-      
+
       <key>
         <name>Ctrl-n</name>
         <desc>Previous Target</desc>
@@ -932,7 +932,7 @@
     <doors>
       <file>Aircraft/F-18C/Nasal/doors.nas</file>
     </doors>
-    
+
     <crash>
       <file>Aircraft/F-18C/Nasal/blackout.nas</file>
     </crash>
@@ -1004,7 +1004,7 @@
       <file>Aircraft/F-18C/Nasal/missile.nas</file>
       <file>Aircraft/F-18C/Nasal/Loading_Missiles.nas</file>
     </missile>
-    
+
     <autostart>
       <file>Aircraft/F-18C/Nasal/autostart.nas</file>
     </autostart>
