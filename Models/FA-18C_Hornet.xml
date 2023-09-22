@@ -1246,7 +1246,7 @@ if(navStillOn) {
     <object-name>RightShock1A</object-name>
     <object-name>RightShock2</object-name>
     <object-name>RightShock2A</object-name>
-    <property>gear/gear/wow</property>
+    <property>gear/gear[2]/wow</property>
     <factor>-60</factor>
     <offset-deg>60</offset-deg>
     <center>
@@ -1267,7 +1267,7 @@ if(navStillOn) {
     <object-name>LeftShock1A</object-name>
     <object-name>LeftShock2</object-name>
     <object-name>LeftShock2A</object-name>
-    <property>gear/gear/wow</property>
+    <property>gear/gear[1]/wow</property>
     <factor>-60</factor>
     <offset-deg>60</offset-deg>
     <center>
@@ -1279,7 +1279,6 @@ if(navStillOn) {
       <y>1.0</y>
     </axis>
   </animation>
-  
 
 
   <!-- Nose gear flaps animation -->
