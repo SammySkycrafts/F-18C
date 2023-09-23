@@ -17,6 +17,12 @@
      <blue>0.75</blue>
    </emission> 
  </animation>  
+ <animation>
+  <type>scale</type>
+  <x-offset>1.01</x-offset>
+  <y-offset>1.4</y-offset>
+  <z-offset>1.4</z-offset>
+ </animation>
 
  <animation>
   <type>rotate</type>
