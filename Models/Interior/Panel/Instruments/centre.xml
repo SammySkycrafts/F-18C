@@ -1,137 +1,282 @@
 <?xml version="1.0"?>
 
 
-
 <PropertyList>
 
- <!--  lower centre console -->
-   <animation>
-  <type>material</type>
-  <object-name>afterburner</object-name>
-   <object-name>brake</object-name>
-   <object-name>hook</object-name>
-   <object-name>launch</object-name>
-  <ambient>
-    <red>0.0</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </ambient>
-  <diffuse>
-    <red>0.1</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </diffuse>
-  <emission>
-    <red>0.8</red>
-    <green>0.0</green>
-    <blue>0.0</blue>
-  </emission> 
- </animation>
- 
+  <animation>
+    <type>material</type>
+    <object-name>l1.006</object-name>
+    <object-name>l1.007</object-name>
+    <object-name>l1.008</object-name>
+    <object-name>l1.009</object-name>
+    <object-name>l1.0012</object-name>
+    <object-name>l1.0011</object-name>
+    <object-name>l1.0010</object-name>
+    <ambient>
+      <red>0.0</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+    </ambient>
+    <diffuse>
+      <red>0.0</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+    </diffuse>
+    <emission>
+      <red>1.0</red>
+      <green>1.0</green>
+      <blue>1.0</blue>
+    </emission>
+  </animation>
+
   <text>
-  <name>afterburner</name>
-  <font>condensed.txf</font>
-  <character-size type="double">0.0056</character-size>
-  <offsets>
-   <x-m>-4.515</x-m>
-   <y-m>-0.023</y-m>
-   <z-m>0.6823</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">AFTRBRN</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
+    <name>l1.006</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>-0.056</y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">A/P</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.007</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">IFF</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.008</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>-0.016</y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">TCN</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.009</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m> 0.005 </y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">ILS</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.0012</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>0.025</y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">D/L</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.0011</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>0.043</y-m>
+      <z-m>0.87</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">BCN</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.0010</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>0.064</y-m>
+      <z-m>0.872</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">ON</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+  <text>
+    <name>l1.0010</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.005</character-size>
+    <offsets>
+      <x-m>-4.54</x-m>
+      <y-m>0.063</y-m>
+      <z-m>0.867</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">OFF</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+
+
+  <!--  lower centre console -->
+  <animation>
+    <type>material</type>
+    <object-name>afterburner</object-name>
+    <object-name>brake</object-name>
+    <object-name>hook</object-name>
+    <object-name>launch</object-name>
+    <ambient>
+      <red>0.0</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+    </ambient>
+    <diffuse>
+      <red>0.1</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+    </diffuse>
+    <emission>
+      <red>0.8</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+    </emission>
+  </animation>
+
+  <text>
+    <name>afterburner</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.0056</character-size>
+    <offsets>
+      <x-m>-4.515</x-m>
+      <y-m>-0.023</y-m>
+      <z-m>0.6823</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">AFTRBRN</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
 
   <animation>
-        <type>select</type>
-        <object-name>afterburner</object-name>
-        
-        <condition>
-       <property>engines/engine[0]/afterburner</property>
-        </condition>
-    </animation>
- 
- 
- 
- <text>
-  <name>brake</name>
-  <font>condensed.txf</font>
-  <character-size type="double">0.0056</character-size>
-  <offsets>
-   <x-m>-4.515</x-m>
-   <y-m>0.024</y-m>
-   <z-m>0.6823</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">BRAKE</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
- 
-  <animation>
-        <type>select</type>
-        <object-name>brake</object-name>
-        
-        <condition>
-       <property>surface-positions/speedbrake-pos-norm</property>
-        </condition>
-    </animation>
+    <type>select</type>
+    <object-name>afterburner</object-name>
 
-	
-<text>
-  <name>hook</name>
-  <font>condensed.txf</font>
-  <character-size type="double">0.0056</character-size>
-  <offsets>
-   <x-m>-4.511</x-m>
-   <y-m>-0.018</y-m>
-   <z-m>0.669</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">HOOK</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>	
- 
- 
+    <condition>
+      <property>engines/engine[0]/afterburner</property>
+    </condition>
+  </animation>
+
+
+  <text>
+    <name>brake</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.0056</character-size>
+    <offsets>
+      <x-m>-4.515</x-m>
+      <y-m>0.024</y-m>
+      <z-m>0.6823</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">BRAKE</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+
   <animation>
-        <type>select</type>
-        <object-name>hook</object-name>
-        
-        <condition>
-       <property>controls/gear/tailhook</property>
-        </condition>
-    </animation>
-	
-	
-	
-	<text>
-  <name>launch</name>
-  <font>condensed.txf</font>
-  <character-size type="double">0.0056</character-size>
-  <offsets>
-   <x-m>-4.511</x-m>
-   <y-m>0.019</y-m>
-   <z-m>0.669</z-m>
-  </offsets>
-  <axis-alignment>yz-plane</axis-alignment>
-  <type type="string">literal</type>
-  <text type="string">LNCH BAR</text>
-  <draw-text type="bool">true</draw-text>
-  <alignment>left-top</alignment>
- </text>
- 
- <animation>
-        <type>select</type>
-        <object-name>launch</object-name>
-        
-        <condition>
-       <property>controls/gear/launchbar</property>
-        </condition>
-    </animation>
-	
+    <type>select</type>
+    <object-name>brake</object-name>
+
+    <condition>
+      <property>surface-positions/speedbrake-pos-norm</property>
+    </condition>
+  </animation>
+
+
+  <text>
+    <name>hook</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.0056</character-size>
+    <offsets>
+      <x-m>-4.511</x-m>
+      <y-m>-0.018</y-m>
+      <z-m>0.669</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">HOOK</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+
+
+  <animation>
+    <type>select</type>
+    <object-name>hook</object-name>
+
+    <condition>
+      <property>controls/gear/tailhook</property>
+    </condition>
+  </animation>
+
+
+  <text>
+    <name>launch</name>
+    <font>condensed.txf</font>
+    <character-size type="double">0.0056</character-size>
+    <offsets>
+      <x-m>-4.511</x-m>
+      <y-m>0.019</y-m>
+      <z-m>0.669</z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">LNCH BAR</text>
+    <draw-text type="bool">true</draw-text>
+    <alignment>left-top</alignment>
+  </text>
+
+  <animation>
+    <type>select</type>
+    <object-name>launch</object-name>
+
+    <condition>
+      <property>controls/gear/launchbar</property>
+    </condition>
+  </animation>
+
 </PropertyList>
