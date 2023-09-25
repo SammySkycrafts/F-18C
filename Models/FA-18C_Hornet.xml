@@ -16,10 +16,7 @@
   </sound>
 
   <nasal>
-    <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/F-18C/Models/Liveries", 50);
-
-    <![CDATA[
+    <load> var livery_update = aircraft.livery_update.new("Aircraft/F-18C/Models/Liveries", 50); <![CDATA[
 var root = cmdarg();
 var rootindex = root.getIndex();
 var mpPath = "/ai/models/multiplayer["~ rootindex ~"]/";
@@ -234,9 +231,9 @@ if(navStillOn) {
 ### the rest of your model load embedded Nasal code ###
 
     ]]>
-
-
-  </load>
+    
+    
+    </load>
     <unload>
       #prevent multiple timers and listeners from running and fighting on next connect
       #cleanly destroy MP property mirroring

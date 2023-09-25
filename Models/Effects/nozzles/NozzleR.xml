@@ -9,9 +9,8 @@
   <object-name>outernozzle.L</object-name>
   <property>controls/engines/engine[1]/throttle</property>
   <interpolation> 
-    <entry><ind>  0</ind><dep>15</dep></entry> 
-    <entry><ind>0.4</ind><dep>15</dep></entry>
-    <entry><ind>0.8</ind><dep>10</dep></entry>
+    <entry><ind>  0</ind><dep>0</dep></entry> 
+    <entry><ind>0.8</ind><dep>15</dep></entry>
     <entry><ind>  1</ind><dep> 0</dep></entry>
   </interpolation>
   <center> 
@@ -30,9 +29,8 @@
   <object-name>innernozzle.L</object-name>
   <property>controls/engines/engine[1]/throttle</property>
   <interpolation> 
-    <entry><ind>  0</ind><dep>15</dep></entry> 
-    <entry><ind>0.4</ind><dep>15</dep></entry>
-    <entry><ind>0.8</ind><dep>10</dep></entry>
+    <entry><ind>  0</ind><dep>0</dep></entry> 
+    <entry><ind>0.8</ind><dep>15</dep></entry>
     <entry><ind>  1</ind><dep> 0</dep></entry>
   </interpolation>
   <center> 
@@ -52,9 +50,8 @@
   <object-name>outernozzle.R</object-name>
   <property>controls/engines/engine[1]/throttle</property>
   <interpolation>
-    <entry><ind>  0</ind><dep>15</dep></entry> 
-    <entry><ind>0.4</ind><dep>15</dep></entry>
-    <entry><ind>0.8</ind><dep>10</dep></entry>
+    <entry><ind>  0</ind><dep>0</dep></entry> 
+    <entry><ind>0.8</ind><dep>15</dep></entry>
     <entry><ind>  1</ind><dep> 0</dep></entry>
   </interpolation>
   <center> 
@@ -73,9 +70,8 @@
   <object-name>innernozzle.R</object-name>
   <property>controls/engines/engine[1]/throttle</property>
   <interpolation> 
-    <entry><ind>  0</ind><dep>15</dep></entry> 
-    <entry><ind>0.4</ind><dep>15</dep></entry>
-    <entry><ind>0.8</ind><dep>10</dep></entry>
+    <entry><ind>  0</ind><dep>0</dep></entry> 
+    <entry><ind>0.8</ind><dep>15</dep></entry>
     <entry><ind>  1</ind><dep> 0</dep></entry>
   </interpolation>
   <center> 

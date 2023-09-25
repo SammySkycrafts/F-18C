@@ -8,23 +8,23 @@
   </model>
 
 
-  <model>
-    <name>LandingLightCone</name>
-    <path>Aircraft/F-18C/Models/Lights/LightCone/LandingLight-cone.xml</path>
-  </model>
-
   <animation>
     <type>select</type>
     <object-name>LandingLightFlash</object-name>
-    <object-name>LandingLightCone</object-name>
     <condition>
       <and>
         <property>lightpack/landing-lights-intensity</property>
         <not>
           <property>sim/crashed</property>
         </not>
+        <greater-than>
+          <property>sim/time/sun-angle-rad</property>
+          <value>1.55</value>
+        </greater-than>
       </and>
     </condition>
   </animation>
+
+  <!-- Landing Lights Need to be implemented -->
 
 </PropertyList>
