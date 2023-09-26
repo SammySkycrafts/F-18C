@@ -4,20 +4,13 @@
 
   <path>Light-flash.ac</path>
 
-  <effect>
-   <inherits-from>Effects/model-transparent</inherits-from>
-   <condition>
-    <property>/sim/rendering/rembrandt/enabled</property>
-   </condition>
-   <object-name>flash</object-name> 
-  </effect>
 
   <animation>
     <object-name>flash</object-name>
     <attach>world</attach>
-  <placer>
-    <type>point</type>
-  </placer>
+    <placer>
+      <type>point</type>
+    </placer>
   </animation>
 
   <animation>
@@ -35,8 +28,8 @@
     </center>
     <axis>
       <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
     <power>6</power>
     <factor>0.04</factor>
@@ -47,18 +40,18 @@
   </animation>
 
   <animation>
-     <type>scale</type>
-     <object-name>flash</object-name>
-     <property>lightpack/probe-light-intensity</property>
+    <type>scale</type>
+    <object-name>flash</object-name>
+    <property>lightpack/probe-light-intensity</property>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>flash</object-name>
     <emission>
-      <red>   1.0 </red>
+      <red> 1.0 </red>
       <green> 1.0 </green>
-      <blue>  0.75 </blue>
+      <blue> 0.75 </blue>
     </emission>
   </animation>
 
@@ -67,13 +60,16 @@
     <object-name>flash</object-name>
     <interpolation>
       <entry>
-        <ind>0</ind><dep>4</dep>
+        <ind>0</ind>
+        <dep>4</dep>
       </entry>
       <entry>
-        <ind>20</ind><dep>4</dep>
+        <ind>20</ind>
+        <dep>4</dep>
       </entry>
       <entry>
-        <ind>1500</ind><dep>8</dep>
+        <ind>1500</ind>
+        <dep>8</dep>
       </entry>
     </interpolation>
   </animation>

@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-<key n="101">
+  <key n="101">
     <name>e</name>
     <desc>Guns</desc>
     <binding>
@@ -26,132 +26,132 @@
     </binding>
   </key>
 
-   <key n="100">
+  <key n="100">
     <name>d</name>
-    <desc>Crew door</desc>
+    <desc>Canopy</desc>
     <binding>
       <command>nasal</command>
       <script>doors.doorsystem.crewexport();</script>
     </binding>
   </key>
 
-     <!-- map keys for catapult launch -->
- <key n="67">
-   <name>C</name>
-   <desc>Catapult Launch Command.</desc>
-   <binding>
-     <command>property-assign</command>
-     <property>/controls/gear/catapult-launch-cmd</property>
-     <value type="bool">true</value>
-   </binding>
-   <mod-up>
-     <binding>
-       <command>property-assign</command>
-       <property>/controls/gear/catapult-launch-cmd</property>
-       <value type="bool">false</value>
-     </binding>
-   </mod-up>
- </key>
-
- <!-- map keys for launch-bar -->
- <key n="76">
-   <name>L</name>
-   <desc>Launch-bar engage.</desc>
-   <binding>
-     <command>property-assign</command>
-     <property>/controls/gear/launchbar</property>
-     <value type="bool">true</value>
-   </binding>
-   <mod-up>
-     <binding>
-       <command>property-assign</command>
-       <property>/controls/gear/launchbar</property>
-       <value type="bool">false</value>
-     </binding>
-   </mod-up>
- </key>
-
- <!-- map keys for arrester hook -->
- <key n="79">
-   <name>O</name>
-   <desc>Hook down.</desc>
-   <binding>
-     <command>property-toggle</command>
-     <property>fdm/jsbsim/systems/hook/tailhook-cmd-norm</property>
-     <value type="double">1</value>
-   </binding>
- </key>
-
- <key n="111">
-   <name>o</name>
-   <desc>Hook Up.</desc>
-   <binding>
-     <command>property-assign</command>
-     <property>fdm/jsbsim/systems/hook/tailhook-cmd-norm</property>
-     <value type="double">0</value>
-   </binding>
- </key>
-
- <key n="123">
-     <name>}</name>
-     <desc>Engine Autostop</desc>
+  <!-- map keys for catapult launch -->
+  <key n="67">
+    <name>C</name>
+    <desc>Catapult Launch Command.</desc>
     <binding>
-        <command>nasal</command>
-        <script>emu.autostop();</script>
+      <command>property-assign</command>
+      <property>/controls/gear/catapult-launch-cmd</property>
+      <value type="bool">true</value>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/gear/catapult-launch-cmd</property>
+        <value type="bool">false</value>
+      </binding>
+    </mod-up>
+  </key>
+
+  <!-- map keys for launch-bar -->
+  <key n="76">
+    <name>L</name>
+    <desc>Launch-bar engage.</desc>
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/gear/launchbar</property>
+      <value type="bool">true</value>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/gear/launchbar</property>
+        <value type="bool">false</value>
+      </binding>
+    </mod-up>
+  </key>
+
+  <!-- map keys for arrester hook -->
+  <key n="79">
+    <name>O</name>
+    <desc>Hook down.</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>fdm/jsbsim/systems/hook/tailhook-cmd-norm</property>
+      <value type="double">1</value>
     </binding>
   </key>
 
-   <key n="125">
-     <name>}</name>
-     <desc>Engine Autostart</desc>
+  <key n="111">
+    <name>o</name>
+    <desc>Hook Up.</desc>
     <binding>
-        <command>nasal</command>
-        <script>emu.autostart();</script>
+      <command>property-assign</command>
+      <property>fdm/jsbsim/systems/hook/tailhook-cmd-norm</property>
+      <value type="double">0</value>
+    </binding>
+  </key>
+
+  <key n="123">
+    <name>}</name>
+    <desc>Engine Autostop</desc>
+    <binding>
+      <command>nasal</command>
+      <script>emu.autostop();</script>
+    </binding>
+  </key>
+
+  <key n="125">
+    <name>}</name>
+    <desc>Engine Autostart</desc>
+    <binding>
+      <command>nasal</command>
+      <script>emu.autostart();</script>
     </binding>
   </key>
 
 
-   <key n="102">
+  <key n="102">
     <name>f</name>
     <desc>Wings</desc>
     <binding>
-     <command>nasal</command>
-     <script>doors.doorsystem.wingsexport();</script>
-    </binding>
-   </key>
-
-   <key n="56">
-        <name>8</name>
-     <desc>Trigger flare release</desc>
-     <binding>
-      <command>property-toggle</command>
-      <property>ai/submodels/submodel/flare-release</property>
-      <value type="bool">true</value>
-     </binding>
-     <mod-up>
-      <binding>
-       <command>property-assign</command>
-      <property>ai/submodels/submodel/flare-release</property>
-       <value type="bool">false</value>
-      </binding>
-     </mod-up>
-    </key>
-
-	<key n="57">
-        <name>9</name>
-    <desc>FuelHose</desc>
-    <binding>
       <command>nasal</command>
-   <script>F-18D.FuelHose.toggle();</script>
+      <script>doors.doorsystem.wingsexport();</script>
     </binding>
   </key>
 
-   <key n="72">
+  <key n="56">
+    <name>8</name>
+    <desc>Trigger flare release</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>ai/submodels/submodel/flare-release</property>
+      <value type="bool">true</value>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>property-assign</command>
+        <property>ai/submodels/submodel/flare-release</property>
+        <value type="bool">false</value>
+      </binding>
+    </mod-up>
+  </key>
+
+  <key n="57">
+    <name>9</name>
+    <desc>FuelHose</desc>
+    <binding>
+      <command>nasal</command>
+      <script>F-18D.FuelHose.toggle();</script>
+    </binding>
+  </key>
+
+  <key n="72">
     <name>H</name>
     <desc>Active Target Seeking</desc>
     <binding>
-       <command>nasal</command>
-       <script>hud.activate_borsight()</script>
+      <command>nasal</command>
+      <script>hud.activate_borsight()</script>
     </binding>
   </key>
 
@@ -159,8 +159,8 @@
     <name>t</name>
     <desc>Active ECM</desc>
     <binding>
-       <command>nasal</command>
-       <script>hud.activate_ECM()</script>
+      <command>nasal</command>
+      <script>hud.activate_ECM()</script>
     </binding>
   </key>
 
@@ -168,8 +168,8 @@
     <name>R</name>
     <desc>Active Telemeter</desc>
     <binding>
-       <command>nasal</command>
-       <script>hud.activate_Telemeter()</script>
+      <command>nasal</command>
+      <script>hud.activate_Telemeter()</script>
     </binding>
   </key>
 
@@ -177,12 +177,12 @@
     <name>t</name>
     <desc>Ajusting Radar Distance</desc>
     <binding>
-       <command>nasal</command>
-       <script>hud.switch_distance()</script>
+      <command>nasal</command>
+      <script>hud.switch_distance()</script>
     </binding>
   </key>
 
-   <key n="81">
+  <key n="81">
     <name>q</name>
     <desc>Toggle radar standby mode</desc>
     <binding>
@@ -210,18 +210,18 @@
     </binding>
   </key>
 
-   <key n="119">
+  <key n="119">
     <name>w</name>
     <desc>Cycle Stick Weapon Mode Selector</desc>
-        <binding>
-          <command>property-adjust</command>
-          <property>controls/armament/stick-selector</property>
-          <step>1</step>
-          <min>0</min>
-          <max>4</max>
-          <repeat>false</repeat>
-          <wrap>true</wrap>
-        </binding>
+    <binding>
+      <command>property-adjust</command>
+      <property>controls/armament/stick-selector</property>
+      <step>1</step>
+      <min>0</min>
+      <max>4</max>
+      <repeat>false</repeat>
+      <wrap>true</wrap>
+    </binding>
   </key>
 
   <key n="113">

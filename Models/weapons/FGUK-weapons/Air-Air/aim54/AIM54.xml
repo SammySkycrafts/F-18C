@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-<!--
+  <!--
 Type Long-range air-to-air missile 
 Place of origin United States 
 
@@ -16,7 +16,6 @@ platform Grumman F-14 Tomcat
 
   <path>aim-54.ac</path>
 
- 
 
   <animation>
     <!-- Objets opaques -->
@@ -28,9 +27,7 @@ platform Grumman F-14 Tomcat
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>aim-54-6</object-name>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
+
   </effect>
-  
+
 </PropertyList>

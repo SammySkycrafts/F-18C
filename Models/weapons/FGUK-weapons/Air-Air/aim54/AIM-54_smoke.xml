@@ -14,9 +14,6 @@
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>aim-54-6</object-name>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
   </effect>
 
   <model>
@@ -29,4 +26,3 @@
   </model>
 
 </PropertyList>
-
