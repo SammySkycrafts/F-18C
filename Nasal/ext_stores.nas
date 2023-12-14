@@ -389,9 +389,6 @@ var radar = func() {
 
 }
 
-#La boite de dialogue
-#var ext_loads_dlg = gui.Dialog.new("dialog","Aircraft/F-18-ACTIVE/Dialogs/external-loads.xml");
-
 #Begining of the dropable function.
 #It has to be simplified and generic made
 #Need to know how to make a table
