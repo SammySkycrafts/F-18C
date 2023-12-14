@@ -8,6 +8,7 @@
     <author>Mathias Froehlich, StuartC, SammySkycrafts, sryu1</author>
     <status>alpha</status>
     <minimum-fg-version>2020.3</minimum-fg-version>
+    <expected-aircraft-dir-name>F-18C</expected-aircraft-dir-name>
 
     <flight-model>jsb</flight-model>
     <aero>f18</aero>
