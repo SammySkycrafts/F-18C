@@ -531,8 +531,8 @@ if(navStillOn) {
   <animation>
     <type>rotate</type>
     <object-name>RightAileron</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor>55</factor>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>-20</factor>
     <axis>
       <x1-m>3.19261</x1-m>
       <y1-m>3.99233</y1-m>
@@ -546,8 +546,8 @@ if(navStillOn) {
     <type>rotate</type>
     <object-name>RightAileronTopUpside</object-name>
     <object-name>RightAileronTopDownside</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor>35</factor>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>-15</factor>
     <axis>
       <x1-m>3.19303</x1-m>
       <y1-m>3.99794</y1-m>
@@ -557,13 +557,14 @@ if(navStillOn) {
       <z2-m>0.121676</z2-m>
     </axis>
   </animation>
+  
 
   <!-- Left Aileron. Two moving parts. -->
   <animation>
     <type>rotate</type>
     <object-name>LeftAileron</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor>55</factor>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>20</factor>
     <axis>
       <x1-m>3.41715</x1-m>
       <y1-m>-5.82127</y1-m>
@@ -577,8 +578,8 @@ if(navStillOn) {
     <type>rotate</type>
     <object-name>LeftAileronTopUpside</object-name>
     <object-name>LeftAileronTopDownside</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor>35</factor>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>15</factor>
     <axis>
       <x1-m>3.41793</x1-m>
       <y1-m>-5.82487</y1-m>
@@ -771,8 +772,8 @@ if(navStillOn) {
   <animation>
     <type>rotate</type>
     <object-name>RightStabilizer</object-name>
-    <property>surface-positions/aileron-pos-norm</property>
-    <factor>-20</factor>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>-5</factor>
     <center>
       <x-m>6.3299</x-m>
       <y-m>1.09</y-m>
@@ -805,8 +806,8 @@ if(navStillOn) {
   <animation>
     <type>rotate</type>
     <object-name>LeftStabilizer</object-name>
-    <property>surface-positions/aileron-pos-norm</property>
-    <factor>20</factor>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>5</factor>
     <center>
       <x-m>6.3299</x-m>
       <y-m>1.09</y-m>
@@ -1656,10 +1657,16 @@ if(navStillOn) {
     <type>select</type>
     <object-name>AB_flameL</object-name>
     <condition>
-      <greater-than>
-        <property>/controls/engines/engine/throttle</property>
-        <value>0.8</value>
-      </greater-than>
+      <and>
+        <greater-than>
+          <property>/controls/engines/engine/throttle</property>
+          <value>0.8</value>
+        </greater-than>
+        <greater-than>
+          <property>/consumables/fuel/tank/level-lbs</property>
+          <value>0</value>
+        </greater-than>
+      </and>
     </condition>
   </animation>
 
@@ -1667,10 +1674,16 @@ if(navStillOn) {
     <type>select</type>
     <object-name>AB_flameR</object-name>
     <condition>
-      <greater-than>
-        <property>/controls/engines/engine/throttle</property>
-        <value>0.8</value>
-      </greater-than>
+      <and>
+        <greater-than>
+          <property>/controls/engines/engine/throttle</property>
+          <value>0.8</value>
+        </greater-than>
+        <greater-than>
+          <property>/consumables/fuel/tank[1]/level-lbs</property>
+          <value>0</value>
+        </greater-than>
+      </and>
     </condition>
   </animation>
 
