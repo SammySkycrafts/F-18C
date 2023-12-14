@@ -1657,10 +1657,16 @@ if(navStillOn) {
     <type>select</type>
     <object-name>AB_flameL</object-name>
     <condition>
-      <greater-than>
-        <property>/controls/engines/engine/throttle</property>
-        <value>0.8</value>
-      </greater-than>
+      <and>
+        <greater-than>
+          <property>/controls/engines/engine/throttle</property>
+          <value>0.8</value>
+        </greater-than>
+        <greater-than>
+          <property>/consumables/fuel/tank/level-lbs</property>
+          <value>0</value>
+        </greater-than>
+      </and>
     </condition>
   </animation>
 
@@ -1668,10 +1674,16 @@ if(navStillOn) {
     <type>select</type>
     <object-name>AB_flameR</object-name>
     <condition>
-      <greater-than>
-        <property>/controls/engines/engine/throttle</property>
-        <value>0.8</value>
-      </greater-than>
+      <and>
+        <greater-than>
+          <property>/controls/engines/engine/throttle</property>
+          <value>0.8</value>
+        </greater-than>
+        <greater-than>
+          <property>/consumables/fuel/tank[1]/level-lbs</property>
+          <value>0</value>
+        </greater-than>
+      </and>
     </condition>
   </animation>
 

@@ -13,9 +13,7 @@
         <width>2</width>
         <height>2</height>
         <input>
-            <property>/accelerations/pilot/z-accel-fps_sec</property>
-            <factor>-0.03108095</factor>
-            <damp>1.0</damp>
+            <property>/accelerations/pilot-gdamped</property>
         </input>
         <format>%2.1f</format>
         <halign>left</halign>
